@@ -1,7 +1,8 @@
 from nltk.corpus.reader.wordnet import Synset
 from nltk.corpus.reader.tagged import TaggedCorpusReader
+from nltk.corpus.reader.semcor import SemcorCorpusReader
 from nltk.corpus import stopwords as stopWordsReader
-from nltk.corpus import treebank,wordnet,brown
+from nltk.corpus import treebank,wordnet,brown,semcor
 from nltk.tag import BigramTagger,UnigramTagger,DefaultTagger
 from nltk.stem import WordNetLemmatizer
 import nltk;import re
@@ -95,9 +96,12 @@ class WSD:
     def overlapTestMat(self):
         a = self.getWordVecMatrix(['boy','man','lion','jungle','forest','hunt'])
         print(self.computeOverlap(a,a))
+    def pageRank(self,wordtag:Tuple[str],seq:List[str]):
+        pass
     def tokenize(self,seq:str):
         return nltk.word_tokenize(seq)
-    def attachSensesTo(self,sent:str):
+    def attachSensesTo(self,sent:str,useLesk=True):
+        sent = sent.lower()
         tkns = self.tokenize(sent)
         tagged_tkns = self.tagger.tag(tkns)
         lemmatkns = self.lemmatize(tkns)
@@ -109,7 +113,16 @@ class WSD:
         defdict = {}
         for tgtkn in tagged_tkns:
             if(tgtkn[1]=='NOUN'):
-                bestSense = self.simplifiedLesk(tgtkn,ctxwordsLemmas)
+                if(useLesk):
+                    bestSense = self.simplifiedLesk(tgtkn,ctxwordsLemmas)
+                else:
+                    bestSense = self.pageRank(tgtkn,ctxwordsLemmas)
                 senses.append(bestSense)
                 defdict[tgtkn[0]] = bestSense
         return defdict
+    def testOnCorpus(self,semcorpus:SemcorCorpusReader):
+        sents = list(semcorpus.tagged_sents())
+        print(sents[0])
+if __name__=='__main__':
+    w = WSD()
+    w.testOnCorpus(semcor)
