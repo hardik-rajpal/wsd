@@ -9,8 +9,8 @@ from wsd import WSD
 #WFS = first sense in wordnet.synsets
 senses:List[Synset] = wordnet.synsets('gay')
 mfs = senses[0]
-for sense in senses[1:]:
-    print(sense,sense.definition(),sense.examples(),'\n')
+for sense in senses[1:2]:
+    print(str(sense.name()))
 """
 0. get_signature(def,examples)
     wordvecs = []
