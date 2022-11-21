@@ -1,7 +1,13 @@
 from typing import List
 from nltk.corpus import wordnet
-from nltk.corpus.reader.wordnet import Synset
+from nltk.corpus.reader.wordnet import Synset,CorpusReader,WordNetCorpusReader
 from wsd import WSD
+wordnet:WordNetCorpusReader
+meanings = wordnet.synsets('gay')
+name,pos,num = meanings[0].name().split('.')
+pos = 'NOUN'
+print(f'{name}.{pos}.{num}')
+print(Synset(f'{name}.{pos}.{int(num)}'))
 #Input: A sentence of paragraph
 #Output: Sentence/paragraph, with the NOUNS tagged with their senses from wordnet.
 #Processing steps:
@@ -11,6 +17,7 @@ from wsd import WSD
 # mfs = senses[0]
 # for sense in senses[1:2]:
 #     print(str(sense.name()))
+
 """
 0. get_signature(def,examples)
     wordvecs = []

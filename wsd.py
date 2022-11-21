@@ -178,14 +178,12 @@ class WSD:
         else:
             return self.unksense
     def getBaselines(self):
-        sents = self.loadSentsFromCorpus()
-        self.setupSenseFreqTable(sents)
-        print('WFS accuracy: ',end='')
-        self.applyMethodOnCorpus(self.wfs)
-        print('MFS accuracy: ',end='')
-        self.applyMethodOnCorpus(self.mfs)
+        print('WFS accuracies: ',end='')
+        self.kfoldeval(lambda x:x,self.wfs)
+        print('MFS accuracies: ',end='')
+        self.kfoldeval(self.setupSenseFreqTable,self.mfs)
     def testOnCorpus(self):
-        self.applyMethodOnCorpus(self.simplifiedLesk)
+        self.kfoldeval(lambda x:x,self.simplifiedLesk)
     def loadSentsFromCorpus(self):
         content = None
         with open('data/tagsemsents.txt','r') as f:
@@ -194,8 +192,19 @@ class WSD:
         for i in range(len(sents)):
             sents[i] = list(map(lambda x:x.split(semtagwordsep),sents[i]))
         return sents
-    def applyMethodOnCorpus(self,func):
+    def kfoldeval(self,trainfunc,func,k=5):
         sents = self.loadSentsFromCorpus()
+        sents = np.asanyarray(sents,dtype=object)
+        perm = np.random.permutation(len(sents))
+        step = int(len(sents)/k)
+        sents = sents[perm].tolist()
+        for i in range(k):
+            #no training in lesk?
+            trainsents = sents[:i*step]+sents[i*step+step:]
+            testsents = sents[i*step:i*step+step]
+            trainfunc(trainsents)
+            self.applyMethodOnCorpus(func,testsents)
+    def applyMethodOnCorpus(self,func,sents):
         senses = []
         for sent in sents:
             seq = list(map(lambda x:x[0].lower(),sent))
@@ -210,6 +219,7 @@ class WSD:
     def evaluate(self,sents,senses):
         accuracy = 0
         numtests = 0
+        failures = []
         for i in range(len(senses)):
             sensesent = senses[i]
             realsent = sents[i]
@@ -217,8 +227,10 @@ class WSD:
                 numtests+=1
                 if(realsent[ind][-1]==sense):
                     accuracy+=1
+                else:
+                    failures.append([realsent,sense,])
         accuracy = round(100*accuracy/numtests,2)
         print(accuracy)
 if __name__=='__main__':
     w = WSD()
-    w.getBaselines()
+    w.testOnCorpus()
