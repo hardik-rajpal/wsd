@@ -125,8 +125,61 @@ class WSD:
                 maxoverlap = overlap
                 bestSense = sense
         return bestSense.name()
-    def pageRank(self,wordtag:Tuple[str],seq:List[str]):
-        pass
+    def pageRank(self, seq: List[str], d=0.8):
+        ambg_word_tuple = []  # (word, tag)
+        indices = []
+        # print(seq)
+        for j in range(len(seq)):
+            wordtuple = seq[j]
+            if (len(wordtuple) == 3):
+                ambg_word_tuple.append(wordtuple[:2])
+                indices.append(j)
+
+        if ambg_word_tuple == []:
+            return []
+
+        senses = []
+        for tup in ambg_word_tuple:
+            senses.append(wordnet.synsets(tup[0], self.lemmaPOS[tup[1]]))
+
+        scores = []
+        for i in range(len(senses)):
+            scores.append([1/len(senses[i])]*len(senses[i]))
+
+        edge_wts = []
+        for i in range(len(senses) - 1):
+            layer_wts = []
+            for j in range(len(senses[i])):
+                node_wts = []
+                for k in range(len(senses[i+1])):
+                    signat1 = self.getSignature(senses[i][j])
+                    signat2 = self.getSignature(senses[i+1][k])
+                    overlap = self.computeOverlap(signat1, signat2)
+                    
+                    node_wts.append(overlap)
+                layer_wts.append(node_wts)
+            edge_wts.append(layer_wts)
+
+        for i in range(1, len(senses)):
+            for j in range(len(senses[i])):
+                score = 0
+                for k in range(len(senses[i-1])):
+                    score += edge_wts[i-1][k][j] / \
+                        (sum(edge_wts[i-1][k])) * scores[i-1][k]
+                scores[i][j] = (1-d) * scores[i][j] + d * score
+        
+        for i in range(len(senses)):
+            for j in range(len(senses[i])):
+                print(senses[i][j].name(), scores[i][j])
+            print()
+
+        answer = []
+        for i in range(len(senses)):
+            if ambg_word_tuple[i][1] == nountag:
+                argm = np.argmax(np.asarray(scores[i]))
+                answer.append([indices[i], senses[i][argm].name()])
+
+        return answer
     def tokenize(self,seq:str):
         return nltk.word_tokenize(seq)
     def attachSensesTo(self,sent:str,useLesk=True):
