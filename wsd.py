@@ -42,13 +42,6 @@ class WSD:
         }
         self.specialChar = re.compile("[!@#$%^&*()[]{};:,./<>?\|`~-=_+]")
 
-    def stopWordsFilter(self, seq: List[str]):
-        return list(filter(lambda x: not self.stopwords.__contains__(x), seq))
-
-    def lemmatize(self, seq: List[str]):
-        # TODO: test out lemmatization with POS
-        return list(map(lambda x: self.lemmatizer.lemmatize(x), seq))
-
     def trainWord2Vec(self, corpus: TaggedCorpusReader):
         sents = list(corpus.sents())
         self.word2vec = Word2Vec(
@@ -56,6 +49,13 @@ class WSD:
         self.wordVectors = self.word2vec.wv.vectors
         self.word2vecinds = self.word2vec.wv.key_to_index
         self.unknownwordvect = np.mean(self.wordVectors, 0)
+
+    def stopWordsFilter(self, seq: List[str]):
+        return list(filter(lambda x: not self.stopwords.__contains__(x), seq))
+
+    def lemmatize(self, seq: List[str]):
+        # TODO: test out lemmatization with POS
+        return list(map(lambda x: self.lemmatizer.lemmatize(x), seq))
 
     def getWordVecMatrix(self, seq: List[str]):
         vecs = []
@@ -95,8 +95,10 @@ class WSD:
         return np.mean(matprod[matprod > thres])
 
     def simplifiedLesk(self, wordtag: Tuple[str], seq: List[str]):
+
         senses: List[Synset] = wordnet.synsets(
             wordtag[0], self.lemmaPOS[wordtag[1]])
+
         if (len(senses) == 0):
             return self.unksense
         bestSense = senses[0]
@@ -117,8 +119,62 @@ class WSD:
             ['boy', 'man', 'lion', 'jungle', 'forest', 'hunt'])
         print(self.computeOverlap(a, a))
 
-    def pageRank(self, wordtag: Tuple[str], seq: List[str]):
-        pass
+    def pageRank(self, seq: List[str], d=0.8):
+
+        ambg_word_tuple = []  # (word, tag)
+        indices = []
+        # print(seq)
+        for j in range(len(seq)):
+            wordtuple = seq[j]
+            if (len(wordtuple) == 3):
+                ambg_word_tuple.append(wordtuple[:2])
+                indices.append(j)
+
+        if ambg_word_tuple == []:
+            return []
+
+        senses = []
+        for tup in ambg_word_tuple:
+            senses.append(wordnet.synsets(tup[0], self.lemmaPOS[tup[1]]))
+
+        scores = []
+        for i in range(len(senses)):
+            scores.append([1/len(senses[i])]*len(senses[i]))
+
+        edge_wts = []
+        for i in range(len(senses) - 1):
+            layer_wts = []
+            for j in range(len(senses[i])):
+                node_wts = []
+                for k in range(len(senses[i+1])):
+                    signat1 = self.getSignature(senses[i][j])
+                    signat2 = self.getSignature(senses[i+1][k])
+                    overlap = self.computeOverlap(signat1, signat2)
+                    
+                    node_wts.append(overlap)
+                layer_wts.append(node_wts)
+            edge_wts.append(layer_wts)
+
+        for i in range(1, len(senses)):
+            for j in range(len(senses[i])):
+                score = 0
+                for k in range(len(senses[i-1])):
+                    score += edge_wts[i-1][k][j] / \
+                        (sum(edge_wts[i-1][k])) * scores[i-1][k]
+                scores[i][j] = (1-d) * scores[i][j] + d * score
+        
+        for i in range(len(senses)):
+            for j in range(len(senses[i])):
+                print(senses[i][j].name(), scores[i][j])
+            print()
+
+        answer = []
+        for i in range(len(senses)):
+            if ambg_word_tuple[i][1] == nountag:
+                argm = np.argmax(np.asarray(scores[i]))
+                answer.append([indices[i], senses[i][argm].name()])
+
+        return answer
 
     def tokenize(self, seq: str):
         return nltk.word_tokenize(seq)
@@ -128,39 +184,56 @@ class WSD:
         tkns = self.tokenize(sent)
         tagged_tkns = self.tagger.tag(tkns)
         lemmatkns = self.lemmatize(tkns)
+
         for i in range(len(tagged_tkns)):
             tagged_tkns[i] = list(tagged_tkns[i])
             tagged_tkns[i][0] = lemmatkns[i]
+
         ctxwordsLemmas = self.stopWordsFilter(lemmatkns)
+        print(ctxwordsLemmas)
         senses = []
         defdict = {}
+
         for tgtkn in tagged_tkns:
             if (tgtkn[1] == 'NOUN'):
                 if (useLesk):
                     bestSense = self.simplifiedLesk(tgtkn, ctxwordsLemmas)
                 else:
                     bestSense = self.pageRank(tgtkn, ctxwordsLemmas)
+
                 senses.append(bestSense)
                 defdict[tgtkn[0]] = bestSense
+
         return defdict
 
-    def testOnCorpus(self):
+    def testOnCorpus(self, useLesk=False):
         content = None
         with open('data/tagsemsents.txt', 'r') as f:
             content = f.read()
+
         sents = json.loads(content)
         for i in range(len(sents)):
             sents[i] = list(map(lambda x: x.split(semtagwordsep), sents[i]))
+
         senses = []
-        for sent in sents[:100]:
+        for sent in sents[:1]:
             seq = list(map(lambda x: x[0].lower(), sent))
             sent_senses = []
-            for j in range(len(sent)):
-                wordtuple = sent[j]
-                if (wordtuple[1] == nountag and len(wordtuple) == 3):
-                    sense = self.simplifiedLesk(wordtuple[:2], seq)
-                    sent_senses.append([j, sense])
-            senses.append(sent_senses)
+
+            if useLesk:
+                for j in range(len(sent)):
+                    wordtuple = sent[j]
+
+                    if (wordtuple[1] == nountag and len(wordtuple) == 3):
+                        sense = self.simplifiedLesk(wordtuple[:2], seq)
+                        sent_senses.append([j, sense])
+
+                senses.append(sent_senses)
+
+            else:
+                sent_senses = self.pageRank(sent)
+                senses.append(sent_senses)
+
         self.evaluate(sents, senses)
 
     def evaluate(self, sents, senses):
