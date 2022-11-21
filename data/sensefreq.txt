@@ -1,0 +1,6393 @@
+{
+    "Friday": {
+        "friday.n.01": 1
+    },
+    "investigation": {
+        "investigation.n.01": 1
+    },
+    "Atlanta": {
+        "atlanta.n.01": 1
+    },
+    "primary_election": {
+        "primary_election.n.01": 1
+    },
+    "evidence": {
+        "evidence.n.01": 2,
+        "NN": 3
+    },
+    "irregularities": {
+        "irregularity.n.01": 1
+    },
+    "jury": {
+        "jury.n.01": 1,
+        "NN": 1
+    },
+    "term": {
+        "term.n.02": 2,
+        "term.n.01": 1,
+        "NN": 2
+    },
+    "end": {
+        "end.n.02": 1,
+        "end.n.01": 2,
+        "end.n.05": 1,
+        "NN": 4
+    },
+    "presentments": {
+        "presentment.n.01": 1
+    },
+    "charge": {
+        "charge.n.06": 1,
+        "NN": 1
+    },
+    "election": {
+        "election.n.01": 4
+    },
+    "praise": {
+        "praise.n.01": 1
+    },
+    "thanks": {
+        "thanks.n.01": 1
+    },
+    "manner": {
+        "manner.n.01": 2
+    },
+    "Committee": {
+        "committee.n.01": 1
+    },
+    "approval": {
+        "approval.n.01": 1
+    },
+    "property": {
+        "property.n.01": 1,
+        "property.n.02": 1
+    },
+    "act": {
+        "act.n.01": 1,
+        "act.n.02": 1,
+        "NN": 1
+    },
+    "Thursday": {
+        "thursday.n.01": 2
+    },
+    "protests": {
+        "protest.n.01": 3
+    },
+    "Texas": {
+        "texas.n.01": 2
+    },
+    "bankers": {
+        "banker.n.01": 1
+    },
+    "fight": {
+        "fight.n.02": 1
+    },
+    "measure": {
+        "measure.n.03": 1,
+        "NN": 1
+    },
+    "rejection": {
+        "rejection.n.01": 1,
+        "NN": 1
+    },
+    "Legislatures": {
+        "legislature.n.01": 1
+    },
+    "hearing": {
+        "hearing.n.01": 1
+    },
+    "distinction": {
+        "distinction.n.03": 1,
+        "distinction.n.01": 1
+    },
+    "team": {
+        "team.n.01": 3
+    },
+    "Major-League_clubs": {
+        "major-league_club.n.01": 1
+    },
+    "spring": {
+        "spring.n.01": 1
+    },
+    "exhibition": {
+        "exhibition.n.01": 1
+    },
+    "decision": {
+        "decision.n.03": 1,
+        "NN": 1
+    },
+    "Kansas_City": {
+        "kansas_city.n.01": 1
+    },
+    "score": {
+        "score.n.03": 1,
+        "NN": 1
+    },
+    "Indications": {
+        "indication.n.01": 1
+    },
+    "top": {
+        "top.n.04": 1,
+        "top.n.01": 1
+    },
+    "the": {
+        "NN": 4
+    },
+    "victory": {
+        "victory.n.01": 1,
+        "NN": 1
+    },
+    "drought": {
+        "drought.n.02": 1
+    },
+    "advantage": {
+        "advantage.n.01": 1,
+        "NN": 1
+    },
+    "halfback": {
+        "halfback.n.01": 1
+    },
+    "plays": {
+        "play.n.03": 1
+    },
+    "games": {
+        "game.n.01": 1
+    },
+    "Time": {
+        "time.n.05": 1
+    },
+    "time": {
+        "time.n.01": 5,
+        "NN": 5,
+        "time.n.03": 4,
+        "time.n.02": 4
+    },
+    "year": {
+        "year.n.01": 4,
+        "NN": 8
+    },
+    "veteran": {
+        "veteran.n.02": 2
+    },
+    "field": {
+        "field.n.08": 1,
+        "NN": 1
+    },
+    "Rookie": {
+        "rookie.n.01": 1
+    },
+    "pitching": {
+        "pitching.n.01": 1
+    },
+    "Monday": {
+        "monday.n.01": 1
+    },
+    "night": {
+        "night.n.01": 5,
+        "NN": 5
+    },
+    "two": {
+        "two.n.01": 2
+    },
+    "Indianapolis": {
+        "indianapolis.n.01": 1
+    },
+    "pound": {
+        "pound.n.01": 1
+    },
+    "lefthander": {
+        "left-hander.n.01": 1
+    },
+    "command": {
+        "command.n.03": 1
+    },
+    "audience": {
+        "audience.n.01": 1
+    },
+    "television": {
+        "television.n.01": 1,
+        "NN": 2
+    },
+    "viewers": {
+        "viewers.n.01": 1
+    },
+    "Denver": {
+        "denver.n.01": 1
+    },
+    "area": {
+        "area.n.01": 1,
+        "NN": 3
+    },
+    "line_coach": {
+        "line_coach.n.01": 1
+    },
+    "football": {
+        "football.n.01": 1
+    },
+    "champion": {
+        "champion.n.01": 1
+    },
+    "today": {
+        "today.n.01": 2,
+        "NN": 6
+    },
+    "coach": {
+        "coach.n.01": 1
+    },
+    "contract": {
+        "contract.n.01": 1
+    },
+    "salary": {
+        "salary.n.01": 1,
+        "NN": 1
+    },
+    "start": {
+        "start.n.02": 1
+    },
+    "season": {
+        "season.n.01": 2,
+        "season.n.02": 1,
+        "NN": 2
+    },
+    "day": {
+        "day.n.02": 4,
+        "day.n.03": 2,
+        "day.n.04": 1,
+        "NN": 5
+    },
+    "temperatures": {
+        "temperature.n.01": 2
+    },
+    "summer": {
+        "summer.n.01": 3,
+        "NN": 3
+    },
+    "pavements": {
+        "pavement.n.01": 1
+    },
+    "anything": {
+        "NN": 3
+    },
+    "feet": {
+        "foot.n.01": 1,
+        "foot.n.02": 1
+    },
+    "types": {
+        "type.n.01": 1
+    },
+    "shoes": {
+        "shoe.n.01": 2
+    },
+    "war": {
+        "war.n.02": 1,
+        "NN": 1
+    },
+    "bombs": {
+        "bomb.n.01": 1
+    },
+    "targets": {
+        "target.n.03": 1
+    },
+    "correspondence": {
+        "correspondence.n.01": 1
+    },
+    "predictions": {
+        "prediction.n.01": 1
+    },
+    "soothsayers": {
+        "soothsayer.n.01": 1
+    },
+    "think_factories": {
+        "think_factory.n.01": 1
+    },
+    "news": {
+        "news.n.01": 1,
+        "NN": 1
+    },
+    "wizard": {
+        "wizard.n.01": 1
+    },
+    "violin": {
+        "violin.n.01": 1,
+        "NN": 1
+    },
+    "recitals": {
+        "recital.n.02": 1
+    },
+    "cadenza": {
+        "cadenza.n.01": 1
+    },
+    "song": {
+        "song.n.01": 1
+    },
+    "violinist": {
+        "violinist.n.01": 1,
+        "NN": 1
+    },
+    "heart": {
+        "heart.n.05": 1
+    },
+    "music": {
+        "music.n.01": 4
+    },
+    "Television": {
+        "television.n.01": 1
+    },
+    "living_arrangement": {
+        "living_arrangement.n.01": 1
+    },
+    "jazz": {
+        "jazz.n.00": 2
+    },
+    "medium": {
+        "medium.n.01": 1,
+        "medium.n.04": 1,
+        "NN": 1
+    },
+    "guest": {
+        "guest.n.01": 1,
+        "NN": 2
+    },
+    "member": {
+        "member.n.01": 1,
+        "NN": 2
+    },
+    "family": {
+        "family.n.01": 2,
+        "family.n.02": 1,
+        "NN": 3
+    },
+    "assumption": {
+        "assumption.n.02": 1
+    },
+    "hour": {
+        "hour.n.01": 2,
+        "hour.n.02": 2,
+        "NN": 1
+    },
+    "Chicago": {
+        "chicago.n.01": 1
+    },
+    "style": {
+        "style.n.01": 2
+    },
+    "prime": {
+        "prime_time.n.01": 1
+    },
+    "evening": {
+        "evening.n.01": 3,
+        "NN": 1
+    },
+    "trimmings": {
+        "trimming.n.01": 1
+    },
+    "documentary": {
+        "documentary.n.01": 1
+    },
+    "settings": {
+        "setting.n.03": 1
+    },
+    "result": {
+        "result.n.03": 1,
+        "result.n.01": 2
+    },
+    "use": {
+        "use.n.01": 5,
+        "NN": 1
+    },
+    "confusion": {
+        "confusion.n.02": 1
+    },
+    "meaning": {
+        "meaning.n.02": 2,
+        "NN": 1
+    },
+    "terms": {
+        "term.n.01": 1
+    },
+    "spirit": {
+        "spirit.n.01": 1,
+        "spirit.n.06": 1
+    },
+    "matter": {
+        "matter.n.01": 2,
+        "matter.n.03": 1,
+        "matter.n.02": 1,
+        "NN": 1
+    },
+    "content": {
+        "content.n.05": 1
+    },
+    "faith": {
+        "faith.n.01": 2,
+        "NN": 1
+    },
+    "form": {
+        "form.n.03": 2,
+        "NN": 1
+    },
+    "people": {
+        "people.n.01": 4,
+        "people.n.02": 1
+    },
+    "one": {
+        "NN": 3,
+        "one.n.01": 1
+    },
+    "goals": {
+        "goal.n.01": 1
+    },
+    "task": {
+        "task.n.01": 1,
+        "task.n.02": 1,
+        "NN": 1
+    },
+    "choice": {
+        "choice.n.03": 1
+    },
+    "representation": {
+        "representation.n.01": 1
+    },
+    "language": {
+        "language.n.01": 2
+    },
+    "theology": {
+        "theology.n.03": 1,
+        "NN": 1
+    },
+    "preaching": {
+        "preaching.n.01": 1
+    },
+    "years": {
+        "year.n.01": 14,
+        "years.n.01": 1
+    },
+    "England": {
+        "england.n.01": 1
+    },
+    "efforts": {
+        "effort.n.01": 1
+    },
+    "individuals": {
+        "individual.n.01": 2
+    },
+    "Roman": {
+        "roman_church.n.01": 1
+    },
+    "Anglican_Churches": {
+        "anglican_church.n.01": 1
+    },
+    "communion": {
+        "communion.n.02": 2
+    },
+    "prayer": {
+        "prayer.n.02": 1
+    },
+    "Rome": {
+        "rome.n.02": 1,
+        "rome.n.01": 1
+    },
+    "association": {
+        "association.n.01": 1
+    },
+    "fruit": {
+        "fruit.n.03": 1
+    },
+    "death": {
+        "death.n.01": 1,
+        "death.n.02": 1,
+        "NN": 2
+    },
+    "man": {
+        "man.n.03": 1,
+        "man.n.01": 4,
+        "man.n.04": 2,
+        "NN": 8
+    },
+    "straight_line": {
+        "straight_line.n.01": 1
+    },
+    "uniqueness": {
+        "uniqueness.n.01": 1
+    },
+    "circle": {
+        "circle.n.01": 2
+    },
+    "universality": {
+        "universality.n.01": 1
+    },
+    "bodybuilder": {
+        "bodybuilder.n.01": 1
+    },
+    "training": {
+        "training.n.01": 2,
+        "NN": 1
+    },
+    "parents": {
+        "parent.n.01": 2
+    },
+    "sonny-boy": {
+        "sonny_boy.n.01": 1
+    },
+    "barbell": {
+        "barbell.n.01": 1
+    },
+    "things": {
+        "thing.n.04": 1,
+        "thing.n.01": 1
+    },
+    "growth": {
+        "growth.n.01": 3,
+        "growth.n.03": 1,
+        "growth.n.02": 2,
+        "NN": 1
+    },
+    "taunts": {
+        "taunt.n.01": 1
+    },
+    "schoolmates": {
+        "schoolmate.n.01": 1
+    },
+    "lookit": {
+        "NN": 1
+    },
+    "muscles": {
+        "muscle.n.01": 1
+    },
+    "none": {
+        "NN": 4
+    },
+    "guy": {
+        "guy.n.01": 1
+    },
+    "ego": {
+        "ego.n.01": 1
+    },
+    "bed": {
+        "bed.n.02": 1,
+        "bed.n.01": 4,
+        "NN": 1
+    },
+    "pansies": {
+        "pansy.n.01": 1
+    },
+    "South_Dakota": {
+        "south_dakota.n.01": 1
+    },
+    "yard": {
+        "yard.n.02": 2
+    },
+    "Pansies": {
+        "pansy.n.01": 1
+    },
+    "flowers": {
+        "flower.n.01": 1
+    },
+    "sun": {
+        "sun.n.02": 2,
+        "sun.n.01": 2
+    },
+    "beauties": {
+        "beauty.n.01": 1
+    },
+    "rhythms": {
+        "rhythm.n.01": 1
+    },
+    "melodies": {
+        "melody.n.01": 1
+    },
+    "source": {
+        "source.n.01": 1,
+        "source.n.02": 1
+    },
+    "pleasure": {
+        "pleasure.n.01": 3,
+        "NN": 1
+    },
+    "listeners": {
+        "listener.n.01": 1
+    },
+    "students": {
+        "student.n.02": 2
+    },
+    "forms": {
+        "form.n.03": 1
+    },
+    "classifiers": {
+        "classifier.n.01": 1
+    },
+    "work": {
+        "work.n.02": 7,
+        "work.n.01": 2,
+        "NN": 3
+    },
+    "problems": {
+        "problem.n.01": 3
+    },
+    "recreation": {
+        "recreation.n.01": 1
+    },
+    "good_deal": {
+        "good_deal.n.01": 1
+    },
+    "planning": {
+        "planning.n.01": 2,
+        "NN": 2
+    },
+    "site": {
+        "site.n.01": 1
+    },
+    "selection": {
+        "selection.n.01": 1,
+        "NN": 1
+    },
+    "gymnasts": {
+        "gymnast.n.01": 2
+    },
+    "Olympics": {
+        "olympics.n.01": 1
+    },
+    "reason": {
+        "reason.n.02": 1,
+        "reason.n.01": 1,
+        "NN": 2
+    },
+    "something": {
+        "NN": 2
+    },
+    "dancers": {
+        "dancer.n.01": 1
+    },
+    "controversy": {
+        "controversy.n.01": 1
+    },
+    "architects": {
+        "architect.n.01": 2
+    },
+    "interior_designers": {
+        "interior_designer.n.01": 1
+    },
+    "interiors": {
+        "interior.n.01": 1
+    },
+    "buildings": {
+        "building.n.01": 1
+    },
+    "focus": {
+        "focus.n.03": 1
+    },
+    "difference_of_opinion": {
+        "difference_of_opinion.n.01": 1
+    },
+    "education": {
+        "education.n.02": 1,
+        "NN": 2
+    },
+    "interior_designer": {
+        "interior_designer.n.01": 2
+    },
+    "architect": {
+        "architect.n.01": 1
+    },
+    "principles": {
+        "principle.n.01": 1,
+        "principle.n.02": 1
+    },
+    "interior": {
+        "interior.n.01": 1
+    },
+    "building": {
+        "building.n.01": 1,
+        "NN": 1
+    },
+    "pause": {
+        "pause.n.01": 1
+    },
+    "merriment": {
+        "merriment.n.02": 1
+    },
+    "friends": {
+        "friend.n.01": 1
+    },
+    "amazement": {
+        "amazement.n.01": 1
+    },
+    "feeling": {
+        "feeling.n.02": 1,
+        "feeling.n.01": 1,
+        "NN": 1
+    },
+    "event": {
+        "event.n.01": 1
+    },
+    "action": {
+        "action.n.06": 1,
+        "action.n.01": 1,
+        "NN": 2
+    },
+    "friend": {
+        "friend.n.01": 3
+    },
+    "California": {
+        "california.n.01": 2
+    },
+    "months": {
+        "month.n.01": 2
+    },
+    "patient": {
+        "patient.n.01": 2
+    },
+    "Doctor": {
+        "doctor.n.01": 1
+    },
+    "popularity": {
+        "popularity.n.01": 2
+    },
+    "folklore": {
+        "folklore.n.01": 1
+    },
+    "America": {
+        "america.n.01": 3
+    },
+    "proportion": {
+        "proportion.n.01": 1
+    },
+    "nationalism": {
+        "nationalism.n.01": 2
+    },
+    "emphasis": {
+        "emphasis.n.01": 2
+    },
+    "influence": {
+        "influence.n.03": 1,
+        "influence.n.04": 1
+    },
+    "world": {
+        "world.n.04": 2,
+        "world.n.01": 2,
+        "world.n.02": 2,
+        "world.n.00": 1,
+        "world.n.05": 1,
+        "world.n.03": 1,
+        "NN": 8
+    },
+    "Color": {
+        "color.n.01": 1
+    },
+    "wide_screen": {
+        "wide_screen.n.01": 1
+    },
+    "fifties": {
+        "fifties.n.01": 1
+    },
+    "Movement": {
+        "movement.n.07": 1
+    },
+    "attraction": {
+        "attraction.n.04": 1,
+        "attraction.n.03": 1,
+        "NN": 1
+    },
+    "movies": {
+        "movie.n.01": 1
+    },
+    "nineties": {
+        "nineties.n.01": 1
+    },
+    "liberals": {
+        "liberal.n.01": 1
+    },
+    "supporters": {
+        "supporter.n.01": 1
+    },
+    "civil_rights": {
+        "civil_rights.n.00": 1
+    },
+    "integration": {
+        "integration.n.01": 2
+    },
+    "nation": {
+        "nation.n.01": 1,
+        "NN": 2
+    },
+    "direction": {
+        "direction.n.03": 2,
+        "direction.n.3;1": 1
+    },
+    "welfare_state": {
+        "welfare_state.n.01": 1
+    },
+    "cells": {
+        "cell.n.02": 1
+    },
+    "organisms": {
+        "organism.n.01": 1
+    },
+    "environments": {
+        "environment.n.01": 1,
+        "environment.n.02": 1
+    },
+    "entropy": {
+        "entropy.n.00": 1
+    },
+    "properties": {
+        "property.n.02": 1
+    },
+    "suggestion": {
+        "suggestion.n.01": 2,
+        "suggestion.n.02": 1,
+        "NN": 1
+    },
+    "culture": {
+        "culture.n.01": 1,
+        "NN": 1
+    },
+    "stage": {
+        "stage.n.02": 1,
+        "NN": 1
+    },
+    "evolution": {
+        "evolution.n.01": 1
+    },
+    "science": {
+        "science.n.00": 2,
+        "NN": 1
+    },
+    "technique": {
+        "technique.n.01": 1
+    },
+    "detail": {
+        "detail.n.01": 1,
+        "NN": 2
+    },
+    "crisis": {
+        "crisis.n.02": 1,
+        "NN": 2
+    },
+    "story": {
+        "story.n.01": 2,
+        "story.n.02": 1,
+        "NN": 1
+    },
+    "number": {
+        "number.n.01": 1,
+        "NN": 4
+    },
+    "elements": {
+        "element.n.01": 2
+    },
+    "compound": {
+        "compound.n.01": 1
+    },
+    "wife": {
+        "wife.n.01": 2,
+        "NN": 1
+    },
+    "lover": {
+        "lover.n.01": 1
+    },
+    "sensuality": {
+        "sensuality.n.01": 1
+    },
+    "mischief": {
+        "mischief.n.01": 1
+    },
+    "maker": {
+        "maker.n.01": 1
+    },
+    "kind": {
+        "kind.n.01": 2
+    },
+    "of": {
+        "NN": 2
+    },
+    "cunning": {
+        "cunning.n.00": 1
+    },
+    "simplicity": {
+        "simplicity.n.02": 1
+    },
+    "bird": {
+        "bird.n.01": 1
+    },
+    "brain": {
+        "brain.n.02": 1
+    },
+    "measures": {
+        "measure.n.04": 1
+    },
+    "economy": {
+        "economy.n.01": 1,
+        "NN": 1
+    },
+    "analysis": {
+        "analysis.n.01": 2
+    },
+    "changes": {
+        "change.n.01": 2,
+        "change.n.02": 1
+    },
+    "situation": {
+        "situation.n.01": 1,
+        "NN": 1
+    },
+    "business": {
+        "business.n.07": 2,
+        "business.n.01": 1,
+        "NN": 2
+    },
+    "outlook": {
+        "outlook.n.02": 1
+    },
+    "national_income": {
+        "national_income.n.01": 1
+    },
+    "balance_of_international_payments": {
+        "balance_of_international_payments.n.01": 1
+    },
+    "indicators": {
+        "indicator.n.01": 1
+    },
+    "radio_emission": {
+        "radio_emission.n.01": 2
+    },
+    "moon": {
+        "moon.n.01": 2
+    },
+    "planets": {
+        "planet.n.01": 1
+    },
+    "information": {
+        "information.n.02": 1,
+        "information.n.01": 3
+    },
+    "bodies": {
+        "heavenly_body.n.01": 1
+    },
+    "atmospheres": {
+        "atmosphere.n.05": 1
+    },
+    "results": {
+        "result.n.01": 1
+    },
+    "observations": {
+        "observation.n.01": 1
+    },
+    "conductivity": {
+        "conductivity.n.01": 1
+    },
+    "surface": {
+        "surface.n.01": 2,
+        "surface.n.02": 1,
+        "surface.n.03": 1,
+        "NN": 2
+    },
+    "layer": {
+        "layer.n.02": 1
+    },
+    "variation": {
+        "variation.n.01": 2
+    },
+    "infrared_emission": {
+        "infrared_emission.n.01": 1
+    },
+    "eclipses": {
+        "eclipse.n.01": 1
+    },
+    "Experiments": {
+        "experiment.n.01": 1
+    },
+    "arc": {
+        "arc.n.01": 3
+    },
+    "graphite": {
+        "graphite.n.01": 1
+    },
+    "anode": {
+        "anode.n.01": 2
+    },
+    "gas": {
+        "gas.n.02": 1
+    },
+    "Argon": {
+        "argon.n.01": 1
+    },
+    "energy": {
+        "energy.n.01": 1,
+        "NN": 1
+    },
+    "band": {
+        "band.n.06": 1,
+        "band.n.01": 1
+    },
+    "viscometer": {
+        "viscometer.n.01": 1
+    },
+    "Figure": {
+        "figure.n.01": 3
+    },
+    "blocks": {
+        "block.n.01": 2,
+        "block.n.04": 1
+    },
+    "surfaces": {
+        "surface.n.01": 1
+    },
+    "shims": {
+        "shim.n.01": 1
+    },
+    "proton_magnetic_resonance": {
+        "proton_magnetic_resonance.n.01": 1
+    },
+    "study": {
+        "study.n.3;1": 1,
+        "study.n.01": 2,
+        "NN": 1
+    },
+    "function": {
+        "function.n.01": 1,
+        "function.n.03": 1,
+        "NN": 1
+    },
+    "magnetic_field": {
+        "magnetic_field.n.01": 1
+    },
+    "temperature": {
+        "temperature.n.01": 1
+    },
+    "electron": {
+        "electron.n.01": 1
+    },
+    "dipole": {
+        "dipole.n.01": 2
+    },
+    "as_well_as": {
+        "NN": 1
+    },
+    "effects": {
+        "effect.n.01": 1
+    },
+    "line": {
+        "line.n.02": 1,
+        "NN": 5
+    },
+    "broadening": {
+        "broadening.n.01": 1
+    },
+    "Polyphosphates": {
+        "polyphosphate.n.01": 1
+    },
+    "life": {
+        "life.n.05": 2,
+        "life.n.03": 1,
+        "NN": 8
+    },
+    "soap": {
+        "soap.n.01": 2
+    },
+    "products": {
+        "product.n.01": 1,
+        "product.n.02": 1,
+        "product.n.1;2": 1
+    },
+    "surfactants": {
+        "surfactant.n.01": 1
+    },
+    "threat": {
+        "threat.n.01": 1
+    },
+    "polyphosphates": {
+        "polyphosphate.n.01": 2
+    },
+    "decline": {
+        "decline.n.01": 1,
+        "decline.n.02": 1
+    },
+    "usage": {
+        "usage.n.01": 1
+    },
+    "synergism": {
+        "synergism.n.01": 1
+    },
+    "detergent": {
+        "detergent.n.01": 1
+    },
+    "actives": {
+        "active.n.01": 1
+    },
+    "market": {
+        "market.n.02": 2
+    },
+    "detergent_builders": {
+        "detergent_builder.n.01": 1
+    },
+    "exchange": {
+        "exchange.n.01": 1,
+        "exchange.n.03": 1
+    },
+    "chlorine": {
+        "chlorine.n.01": 1
+    },
+    "f": {
+        "NN": 4
+    },
+    "range": {
+        "range.n.01": 1
+    },
+    "photochemical_exchange": {
+        "photochemical_exchange.n.01": 1
+    },
+    "quantum": {
+        "quantum.n.00": 1
+    },
+    "yield": {
+        "yield.n.01": 1
+    },
+    "order": {
+        "order.n.02": 1,
+        "order.n.08": 1,
+        "NN": 2
+    },
+    "unity": {
+        "unity.n.02": 1,
+        "unity.n.01": 1,
+        "NN": 2
+    },
+    "liquid": {
+        "liquid.n.02": 1
+    },
+    "phase": {
+        "phase.n.02": 1
+    },
+    "light": {
+        "light.n.01": 1,
+        "light.n.05": 1,
+        "NN": 1
+    },
+    "effect": {
+        "effect.n.01": 2
+    },
+    "retardation": {
+        "retardation.n.01": 1
+    },
+    "motion": {
+        "motion.n.02": 2
+    },
+    "particles": {
+        "particle.n.02": 1
+    },
+    "aberration": {
+        "aberration.n.01": 1
+    },
+    "repulsive_force": {
+        "repulsive_force.n.01": 1
+    },
+    "impinging": {
+        "impinging.n.01": 1
+    },
+    "solar_radiation": {
+        "solar_radiation.n.01": 1
+    },
+    "dust": {
+        "dust.n.02": 1
+    },
+    "times": {
+        "time.n.02": 1,
+        "time.n.03": 1,
+        "times.n.01": 1,
+        "time.n.01": 3
+    },
+    "age": {
+        "age.n.01": 1,
+        "NN": 1
+    },
+    "Earth": {
+        "earth.n.01": 1
+    },
+    "velocity": {
+        "velocity.n.01": 1
+    },
+    "particle": {
+        "particle.n.02": 2
+    },
+    "size": {
+        "size.n.01": 2
+    },
+    "|": {
+        "NN": 1
+    },
+    "m": {
+        "m.n.01": 1
+    },
+    "diameter": {
+        "diameter.n.01": 1
+    },
+    "orbit": {
+        "orbit.n.01": 1
+    },
+    "Mars": {
+        "mars.n.01": 1
+    },
+    "million": {
+        "million.n.01": 1
+    },
+    "Biological_warfare": {
+        "biological_warfare.n.01": 1
+    },
+    "microorganisms": {
+        "microorganism.n.01": 1
+    },
+    "purpose": {
+        "purpose.n.01": 4,
+        "purpose.n.03": 1,
+        "NN": 2
+    },
+    "effectiveness": {
+        "effectiveness.n.02": 1,
+        "effectiveness.n.01": 1
+    },
+    "exploitation": {
+        "exploitation.n.02": 1
+    },
+    "potential": {
+        "potential.n.01": 1
+    },
+    "infectious_disease": {
+        "infectious_disease.n.01": 1
+    },
+    "agents": {
+        "agent.n.01": 1
+    },
+    "research": {
+        "research.n.01": 2
+    },
+    "development": {
+        "development.n.01": 2,
+        "development.n.02": 6,
+        "NN": 1
+    },
+    "production": {
+        "production.n.01": 2
+    },
+    "BW": {
+        "bw.n.01": 1
+    },
+    "weapons_systems": {
+        "weapons_system.n.01": 1
+    },
+    "variety": {
+        "variety.n.01": 1,
+        "NN": 1
+    },
+    "techniques": {
+        "technique.n.01": 3
+    },
+    "isolation": {
+        "isolation.n.01": 1
+    },
+    "blood_group": {
+        "blood_group.n.00": 1
+    },
+    "antibodies": {
+        "antibody.n.01": 1
+    },
+    "low-temperature": {
+        "low_temperature.n.01": 1
+    },
+    "ethanol": {
+        "ethanol.n.01": 1
+    },
+    "fractionation": {
+        "fractionation.n.02": 1
+    },
+    "electrophoresis": {
+        "electrophoresis.n.01": 1
+    },
+    "ultracentrifugation": {
+        "ultracentrifugation.n.01": 1
+    },
+    "column_chromatography": {
+        "column_chromatography.n.01": 1
+    },
+    "ion_exchange": {
+        "ion_exchange.n.01": 1
+    },
+    "celluloses": {
+        "cellulose.n.01": 1
+    },
+    "honeybee": {
+        "honeybee.n.01": 1
+    },
+    "bees": {
+        "bee.n.01": 1
+    },
+    "bumblebees": {
+        "bumblebee.n.01": 2
+    },
+    "state": {
+        "state.n.02": 2,
+        "state.n.01": 1,
+        "state_government.n.01": 1,
+        "NN": 8
+    },
+    "torpor": {
+        "torpor.n.01": 1
+    },
+    "sods": {
+        "sod.n.01": 1
+    },
+    "garden": {
+        "garden.n.01": 2
+    },
+    "observer": {
+        "observer.n.01": 1
+    },
+    "snakes": {
+        "snake.n.01": 1
+    },
+    "maturity": {
+        "maturity.n.01": 2
+    },
+    "half": {
+        "half.n.01": 2,
+        "NN": 2
+    },
+    "length": {
+        "length.n.01": 3,
+        "NN": 2
+    },
+    "thirds": {
+        "third.n.01": 1
+    },
+    "rattlesnakes": {
+        "rattlesnake.n.01": 1
+    },
+    "data": {
+        "data.n.01": 1
+    },
+    "garter": {
+        "garter_snake.n.01": 1
+    },
+    "ribbon_snakes": {
+        "ribbon_snake.n.01": 1
+    },
+    "Thamnophis": {
+        "thamnophis.n.01": 1
+    },
+    "females": {
+        "female.n.01": 1
+    },
+    "adults": {
+        "adult.n.02": 1
+    },
+    "bronchus": {
+        "bronchus.n.01": 1
+    },
+    "pulmonary_artery": {
+        "pulmonary_artery.n.01": 1
+    },
+    "lung": {
+        "lung.n.01": 1
+    },
+    "type": {
+        "type.n.01": 7
+    },
+    "relationship": {
+        "relationship.n.01": 2,
+        "relationship.n.02": 1,
+        "NN": 1
+    },
+    "pulmonary_vein": {
+        "pulmonary_vein.n.01": 1
+    },
+    "tissue": {
+        "tissue.n.01": 2
+    },
+    "septa": {
+        "septum.n.01": 1
+    },
+    "path": {
+        "path.n.03": 1
+    },
+    "hilum": {
+        "hilum.n.01": 1
+    },
+    "figs.": {
+        "fig.n.01": 1
+    },
+    "features": {
+        "feature.n.01": 1
+    },
+    "portions": {
+        "portion.n.01": 1
+    },
+    "Table": {
+        "table.n.01": 3
+    },
+    "Onset": {
+        "onset.n.01": 1
+    },
+    "Profile": {
+        "profile.n.01": 1
+    },
+    "boys": {
+        "boy.n.01": 1
+    },
+    "girls": {
+        "girl.n.02": 1
+    },
+    "digitalis_glycosides": {
+        "digitalis_glycoside.n.01": 1
+    },
+    "concentration": {
+        "concentration.n.01": 1
+    },
+    "potassium": {
+        "potassium.n.01": 2
+    },
+    "incubation": {
+        "incubation.n.01": 1
+    },
+    "absence": {
+        "absence.n.01": 1
+    },
+    "mechanism": {
+        "mechanism.n.01": 1
+    },
+    "organification": {
+        "organification.n.01": 1
+    },
+    "iodine": {
+        "iodine.n.01": 1
+    },
+    "thyroid": {
+        "thyroid.n.01": 1
+    },
+    "Muscle": {
+        "muscle.n.01": 1
+    },
+    "weakness": {
+        "weakness.n.03": 1,
+        "weakness.n.01": 1
+    },
+    "complication": {
+        "complication.n.01": 1
+    },
+    "steroid": {
+        "steroid.n.01": 2
+    },
+    "therapy": {
+        "therapy.n.01": 1
+    },
+    "corticosteroids": {
+        "corticosteroid.n.01": 1
+    },
+    "biopsies": {
+        "biopsy.n.01": 1
+    },
+    "cases": {
+        "case.n.01": 2,
+        "case.n.02": 1,
+        "case.n.03": 1
+    },
+    "case": {
+        "case.n.01": 1,
+        "case.n.03": 1,
+        "NN": 1
+    },
+    "example": {
+        "example.n.01": 1,
+        "NN": 1
+    },
+    "necropsy": {
+        "necropsy.n.01": 1
+    },
+    "opportunity": {
+        "opportunity.n.01": 1
+    },
+    "muscle": {
+        "muscle.n.01": 1,
+        "NN": 1
+    },
+    "groups": {
+        "group.n.01": 1
+    },
+    "specificity": {
+        "specificity.n.02": 1
+    },
+    "staining": {
+        "staining.n.01": 1
+    },
+    "fluorescein": {
+        "fluorescein.n.01": 1
+    },
+    "antisera": {
+        "antiserum.n.01": 1
+    },
+    "methods": {
+        "method.n.01": 1
+    },
+    "ways": {
+        "way.n.01": 2
+    },
+    "Dowex-2-chloride": {
+        "NE": 1
+    },
+    "acetone": {
+        "acetone.n.01": 1
+    },
+    "powders": {
+        "powder.n.01": 1
+    },
+    "mouse": {
+        "mouse.n.01": 1
+    },
+    "liver": {
+        "liver.n.01": 1
+    },
+    "sweet_clover": {
+        "sweet_clover.n.01": 3
+    },
+    "stems": {
+        "stem.n.02": 3,
+        "stem.n.01": 2
+    },
+    "crown_gall": {
+        "crown_gall.n.01": 1
+    },
+    "Agrobacterium_tumefaciens": {
+        "agrobacterium_tumefaciens.n.01": 1
+    },
+    "conjugates": {
+        "conjugate.n.01": 1
+    },
+    "sera": {
+        "serum.n.01": 1
+    },
+    "30_minutes": {
+        "30_minutes.n.01": 1
+    },
+    "mg": {
+        "mg.n.01": 1
+    },
+    "proteins": {
+        "protein.n.01": 1
+    },
+    "reactions": {
+        "reaction.n.03": 1
+    },
+    "vertebrates": {
+        "vertebrate.n.01": 1
+    },
+    "experience": {
+        "experience.n.02": 1,
+        "NN": 5
+    },
+    "symbols": {
+        "symbol.n.01": 1
+    },
+    "hypothalamus": {
+        "hypothalamus.n.01": 2
+    },
+    "cortex": {
+        "cortex.n.01": 2
+    },
+    "experiments": {
+        "experiment.n.01": 2
+    },
+    "application": {
+        "application.n.03": 1
+    },
+    "strychnine": {
+        "strychnine.n.01": 1
+    },
+    "cerebral_cortex": {
+        "cerebral_cortex.n.01": 1
+    },
+    "transmission": {
+        "transmission.n.01": 1
+    },
+    "impulses": {
+        "impulse.n.03": 1
+    },
+    "linear_operator": {
+        "linear_operator.n.01": 1
+    },
+    "T": {
+        "NN": 5
+    },
+    "space": {
+        "space.n.00": 1,
+        "space.n.01": 1,
+        "space.n.03": 1,
+        "NN": 2
+    },
+    "V": {
+        "NN": 1
+    },
+    "operators": {
+        "operator.n.01": 1
+    },
+    "sense": {
+        "sense.n.00": 2,
+        "sense.n.04": 1,
+        "NN": 3
+    },
+    "values": {
+        "value.n.01": 1
+    },
+    "vectors": {
+        "vector.n.01": 1
+    },
+    "polynomial": {
+        "polynomial.n.01": 1
+    },
+    "scalar_field": {
+        "scalar_field.n.01": 1
+    },
+    "F": {
+        "NN": 1
+    },
+    "product": {
+        "product.n.03": 1,
+        "product.n.04": 1
+    },
+    "monic_polynomials": {
+        "monic_polynomial.n.01": 1
+    },
+    "degree": {
+        "degree.n.05": 1,
+        "degree.n.01": 2
+    },
+    "1": {
+        "1.n.01": 1
+    },
+    "repetitions": {
+        "repetition.n.01": 1
+    },
+    "trials": {
+        "trial.n.01": 2
+    },
+    "outcomes": {
+        "outcome.n.02": 1
+    },
+    "binomial": {
+        "binomial_distribution.n.01": 1
+    },
+    "probability": {
+        "probability.n.01": 1
+    },
+    "distribution": {
+        "NN": 1
+    },
+    "set": {
+        "set.n.01": 1,
+        "NN": 2
+    },
+    "experiment": {
+        "experiment.n.01": 1
+    },
+    "curve": {
+        "curve.n.01": 1,
+        "NN": 1
+    },
+    "C": {
+        "NN": 1
+    },
+    "image": {
+        "image.n.03": 1
+    },
+    "unit": {
+        "unit.n.04": 1,
+        "unit.n.01": 1
+    },
+    "functions": {
+        "function.n.01": 1
+    },
+    "period": {
+        "period.n.01": 1,
+        "NN": 3
+    },
+    "societies": {
+        "society.n.01": 3
+    },
+    "processes": {
+        "process.n.01": 1
+    },
+    "modernization": {
+        "modernization.n.01": 1
+    },
+    "momentum": {
+        "momentum.n.01": 1,
+        "momentum.n.02": 1,
+        "NN": 1
+    },
+    "cohesion": {
+        "cohesion.n.01": 1
+    },
+    "forces": {
+        "force.n.04": 1,
+        "force.n.01": 1
+    },
+    "gaps": {
+        "gap.n.01": 1
+    },
+    "rulers": {
+        "ruler.n.01": 2
+    },
+    "subjects": {
+        "subject.n.07": 1,
+        "subject.n.02": 1
+    },
+    "town": {
+        "town.n.01": 4
+    },
+    "country": {
+        "country.n.01": 2,
+        "country.n.02": 1,
+        "country.n.03": 1,
+        "NN": 3
+    },
+    "aspirants": {
+        "aspirant.n.01": 1
+    },
+    "power": {
+        "power.n.01": 1,
+        "NN": 4
+    },
+    "ambitions": {
+        "ambition.n.01": 1
+    },
+    "competence": {
+        "competence.n.01": 1
+    },
+    "nerve": {
+        "nerve.n.02": 1
+    },
+    "sense_of_direction": {
+        "sense_of_direction.n.01": 1
+    },
+    "place": {
+        "place.n.03": 2,
+        "place.n.01": 2,
+        "place.n.07": 1,
+        "place.n.02": 1,
+        "NN": 1
+    },
+    "religion": {
+        "religion.n.01": 2,
+        "NN": 1
+    },
+    "social_organization": {
+        "social_organization.n.01": 1
+    },
+    "part": {
+        "part.n.01": 3,
+        "part.n.05": 1,
+        "NN": 3
+    },
+    "parts": {
+        "part.n.01": 1,
+        "part.n.05": 2,
+        "part.n.09": 1
+    },
+    "process": {
+        "process.n.01": 3
+    },
+    "preparation": {
+        "preparation.n.01": 1
+    },
+    "discussion": {
+        "discussion.n.01": 1
+    },
+    "statement": {
+        "statement.n.01": 2,
+        "NN": 1
+    },
+    "goodness": {
+        "goodness.n.01": 1
+    },
+    "quality": {
+        "quality.n.01": 1,
+        "quality.n.02": 1,
+        "quality.n.04": 2
+    },
+    "judgments": {
+        "judgment.n.02": 1
+    },
+    "value": {
+        "value.n.02": 1,
+        "value.n.01": 1,
+        "NN": 1
+    },
+    "miner": {
+        "miner.n.01": 1
+    },
+    "shrapnel": {
+        "shrapnel.n.01": 1
+    },
+    "back": {
+        "back.n.02": 1,
+        "back.n.01": 1
+    },
+    "head": {
+        "head.n.01": 1,
+        "NN": 4
+    },
+    "damage": {
+        "damage.n.01": 1
+    },
+    "occipital_lobe": {
+        "occipital_lobe.n.01": 1
+    },
+    "side": {
+        "side.n.01": 3,
+        "NN": 1
+    },
+    "cerebellum": {
+        "cerebellum.n.01": 1
+    },
+    "artists": {
+        "artist.n.01": 1
+    },
+    "representations": {
+        "representation.n.02": 1
+    },
+    "three-dimensional_figures": {
+        "three-dimensional_figure.n.01": 1
+    },
+    "B.C.": {
+        "bc.n.00": 1
+    },
+    "reality": {
+        "reality.n.01": 2
+    },
+    "Plate": {
+        "plate.n.03": 1
+    },
+    "9b": {
+        "NN": 1
+    },
+    "treatment": {
+        "treatment.n.03": 1,
+        "treatment.n.02": 2
+    },
+    "men": {
+        "man.n.04": 1,
+        "man.n.01": 6
+    },
+    "animals": {
+        "animal.n.01": 1
+    },
+    "intent": {
+        "intent.n.02": 1
+    },
+    "century": {
+        "century.n.01": 4,
+        "NN": 3
+    },
+    "view": {
+        "view.n.01": 2,
+        "view.n.07": 1,
+        "NN": 1
+    },
+    "matters": {
+        "matter.n.02": 1
+    },
+    "judgment": {
+        "judgment.n.04": 1
+    },
+    "beef": {
+        "beef.n.02": 2,
+        "beef_man.n.01": 1
+    },
+    "possession": {
+        "possession.n.01": 1,
+        "NN": 1
+    },
+    "days": {
+        "day.n.01": 2,
+        "day.n.06": 1
+    },
+    "hide": {
+        "hide.n.01": 1
+    },
+    "conviction": {
+        "conviction.n.02": 1,
+        "NN": 1
+    },
+    "plant": {
+        "plant.n.01": 2,
+        "NN": 2
+    },
+    "location": {
+        "location.n.01": 1
+    },
+    "electric_light": {
+        "electric_light.n.01": 1
+    },
+    "shares": {
+        "share.n.02": 1,
+        "NN": 1
+    },
+    "stock": {
+        "stock.n.01": 2
+    },
+    "construction": {
+        "construction.n.01": 1,
+        "NN": 2
+    },
+    "sewer": {
+        "sewer.n.01": 1
+    },
+    "locality": {
+        "locality.n.01": 1
+    },
+    "assessments": {
+        "assessment.n.01": 1
+    },
+    "maintenance": {
+        "maintenance.n.01": 1
+    },
+    "Utopia": {
+        "utopia.n.01": 1
+    },
+    "diversion": {
+        "diversion.n.01": 1
+    },
+    "phantasy": {
+        "phantasy.n.01": 1
+    },
+    "holiday": {
+        "holiday.n.01": 1
+    },
+    "overflow": {
+        "overflow.n.01": 1
+    },
+    "high_spirits": {
+        "high_spirits.n.01": 1
+    },
+    "revel": {
+        "revel.n.01": 1
+    },
+    "debate": {
+        "debate.n.01": 1
+    },
+    "paradox": {
+        "paradox.n.01": 1
+    },
+    "comedy": {
+        "comedy.n.02": 1,
+        "NN": 1
+    },
+    "invention": {
+        "invention.n.03": 1
+    },
+    "points": {
+        "point.n.07": 1
+    },
+    "trial": {
+        "trial.n.00": 2,
+        "NN": 2
+    },
+    "press": {
+        "press.n.00": 1
+    },
+    "proceedings": {
+        "proceeding.n.01": 1
+    },
+    "martyr": {
+        "martyr.n.01": 1
+    },
+    "Declaration_of_Independence": {
+        "declaration_of_independence.n.01": 1
+    },
+    "newspaper": {
+        "newspaper.n.02": 1
+    },
+    "murderer": {
+        "murderer.n.01": 1
+    },
+    "blood": {
+        "blood.n.02": 1
+    },
+    "associates": {
+        "associate.n.01": 1
+    },
+    "assistance": {
+        "assistance.n.01": 1,
+        "NN": 1
+    },
+    "Republicans": {
+        "republican.n.01": 1
+    },
+    "Abolitionists": {
+        "abolitionist.n.01": 1
+    },
+    "liberation": {
+        "liberation.n.01": 1
+    },
+    "slaves": {
+        "slave.n.01": 1
+    },
+    "overthrow": {
+        "overthrow.n.01": 1
+    },
+    "federal_governments": {
+        "federal_government.n.01": 1
+    },
+    "eye": {
+        "eye.n.02": 1
+    },
+    "objects": {
+        "object.n.01": 2
+    },
+    "nothing": {
+        "nothing.n.01": 6,
+        "NN": 1
+    },
+    "picture": {
+        "picture.n.01": 1,
+        "NN": 1
+    },
+    "facet-plane": {
+        "facet_plane.n.01": 1
+    },
+    "tendency": {
+        "tendency.n.02": 1,
+        "tendency.n.01": 1
+    },
+    "arm's_length": {
+        "arm's_length.n.01": 1
+    },
+    "eye-undeceiving": {
+        "NN": 1
+    },
+    "contrivances": {
+        "contrivance.n.02": 1
+    },
+    "Los_Angeles": {
+        "los_angeles.n.01": 1
+    },
+    "skyscraper": {
+        "skyscraper.n.01": 1
+    },
+    "density": {
+        "density.n.02": 1
+    },
+    "core": {
+        "core.n.02": 1
+    },
+    "rapid-transit": {
+        "rapid_transit.n.01": 1
+    },
+    "systems": {
+        "system.n.02": 1
+    },
+    "prices": {
+        "price.n.01": 1
+    },
+    "midwest": {
+        "midwest.n.01": 1
+    },
+    "oxidation": {
+        "oxidation.n.01": 2
+    },
+    "ponds": {
+        "pond.n.01": 1
+    },
+    "sewage": {
+        "sewage.n.01": 1
+    },
+    "areas": {
+        "area.n.01": 4
+    },
+    "cost": {
+        "cost.n.02": 1,
+        "NN": 1
+    },
+    "land": {
+        "land.n.01": 2,
+        "NN": 2
+    },
+    "loadings": {
+        "loading.n.01": 1
+    },
+    "need": {
+        "need.n.01": 3,
+        "NN": 1
+    },
+    "wastewater": {
+        "wastewater.n.01": 1
+    },
+    "system": {
+        "system.n.01": 1
+    },
+    "characteristics": {
+        "characteristic.n.01": 2
+    },
+    "pond": {
+        "pond.n.01": 2
+    },
+    "ability": {
+        "ability.n.01": 1
+    },
+    "volume": {
+        "volume.n.01": 1
+    },
+    "school": {
+        "school.n.02": 1,
+        "school.n.01": 2,
+        "NN": 2
+    },
+    "doctor": {
+        "doctor.n.01": 2
+    },
+    "specialist": {
+        "specialist.n.02": 1
+    },
+    "discount": {
+        "discount.n.01": 1
+    },
+    "members": {
+        "member.n.01": 1
+    },
+    "remainder": {
+        "remainder.n.01": 1
+    },
+    "rest": {
+        "rest.n.01": 2
+    },
+    "edges": {
+        "edge.n.01": 1
+    },
+    "sea": {
+        "sea.n.01": 2
+    },
+    "waves": {
+        "wave.n.01": 2
+    },
+    "glacier": {
+        "glacier.n.01": 1
+    },
+    "solidity": {
+        "solidity.n.01": 1
+    },
+    "immobility": {
+        "immobility.n.01": 1
+    },
+    "turmoil": {
+        "turmoil.n.01": 1
+    },
+    "objective": {
+        "objective.n.01": 1
+    },
+    "colonel": {
+        "colonel.n.01": 4
+    },
+    "briefing": {
+        "briefing.n.01": 1
+    },
+    "whisky-on-the-rocks": {
+        "whisky_on_the_rocks.n.01": 1
+    },
+    "bar": {
+        "bar.n.01": 1
+    },
+    "funeral_parlor": {
+        "funeral_parlor.n.01": 1
+    },
+    "scent": {
+        "scent.n.01": 1
+    },
+    "beer": {
+        "beer.n.01": 2
+    },
+    "tobacco": {
+        "tobacco.n.01": 1
+    },
+    "smoke": {
+        "smoke.n.01": 1,
+        "NN": 1
+    },
+    "cooking": {
+        "cooking.n.00": 1
+    },
+    "Bishop": {
+        "bishop.n.01": 1
+    },
+    "reins": {
+        "rein.n.01": 1
+    },
+    "fog": {
+        "fog.n.01": 1,
+        "NN": 1
+    },
+    "darkness": {
+        "darkness.n.01": 1
+    },
+    "sneer": {
+        "sneer.n.01": 1
+    },
+    "legs": {
+        "leg.n.01": 2
+    },
+    "bastard": {
+        "bastard.n.01": 1
+    },
+    "Rousseau": {
+        "rousseau.n.01": 1
+    },
+    "Voltaire": {
+        "voltaire.n.01": 1
+    },
+    "books": {
+        "book.n.01": 1
+    },
+    "dinner": {
+        "dinner.n.01": 1
+    },
+    "dark": {
+        "dark.n.01": 1
+    },
+    "forest": {
+        "forest.n.01": 1
+    },
+    "thieves": {
+        "thief.n.01": 2
+    },
+    "everything": {
+        "NN": 3
+    },
+    "clothes": {
+        "clothes.n.01": 1
+    },
+    "morning": {
+        "morning.n.01": 2,
+        "NN": 2
+    },
+    "rider": {
+        "rider.n.01": 1
+    },
+    "Concord": {
+        "concord.n.01": 1
+    },
+    "word": {
+        "word.n.06": 1,
+        "word.n.02": 1,
+        "NN": 1
+    },
+    "gambling_houses": {
+        "gambling_house.n.01": 1
+    },
+    "threats": {
+        "threat.n.03": 1
+    },
+    "gaming-card": {
+        "gaming_card.n.01": 1
+    },
+    "manufacturer": {
+        "manufacturer.n.02": 1
+    },
+    "Dancing": {
+        "dancing.n.01": 1
+    },
+    "streets": {
+        "street.n.01": 3
+    },
+    "shelter": {
+        "shelter.n.02": 1,
+        "shelter.n.01": 1,
+        "NN": 1
+    },
+    "tent": {
+        "tent.n.01": 2
+    },
+    "hospital": {
+        "hospital.n.01": 3
+    },
+    "rain": {
+        "rain.n.01": 1
+    },
+    "hands": {
+        "hand.n.01": 1
+    },
+    "counter": {
+        "counter.n.04": 1,
+        "counter.n.01": 1
+    },
+    "boards": {
+        "board.n.02": 1
+    },
+    "barrels": {
+        "barrel.n.02": 1
+    },
+    "child": {
+        "child.n.01": 1
+    },
+    "environment": {
+        "environment.n.01": 1
+    },
+    "room": {
+        "room.n.01": 1,
+        "NN": 3
+    },
+    "hall": {
+        "hall.n.01": 4
+    },
+    "kitchen": {
+        "kitchen.n.01": 3
+    },
+    "stove": {
+        "stove.n.01": 1
+    },
+    "mixture": {
+        "mixture.n.01": 1
+    },
+    "myrrh": {
+        "myrrh.n.00": 1
+    },
+    "aloes": {
+        "aloes.n.01": 1
+    },
+    "pounds": {
+        "pound.n.01": 1
+    },
+    "weight": {
+        "weight.n.01": 1
+    },
+    "Jesus": {
+        "jesus.n.01": 1
+    },
+    "body": {
+        "body.n.01": 3,
+        "NN": 1
+    },
+    "winding-clothes": {
+        "winding-clothes.n.01": 1
+    },
+    "spices": {
+        "spice.n.01": 1
+    },
+    "Jews": {
+        "jew.n.01": 1
+    },
+    "burial": {
+        "burial.n.01": 1
+    },
+    "breath": {
+        "breath.n.01": 1
+    },
+    "gasps": {
+        "gasp.n.01": 1
+    },
+    "arms": {
+        "arm.n.01": 1
+    },
+    "sound": {
+        "sound.n.03": 1,
+        "NN": 1
+    },
+    "glow": {
+        "glow.n.02": 1
+    },
+    "cove": {
+        "cove.n.01": 1
+    },
+    "sky": {
+        "sky.n.01": 1
+    },
+    "other": {
+        "NN": 1
+    },
+    "partners": {
+        "partner.n.01": 2
+    },
+    "women": {
+        "woman.n.01": 3
+    },
+    "rags": {
+        "rag.n.01": 1
+    },
+    "way": {
+        "way.n.05": 1,
+        "NN": 1
+    },
+    "Peasants": {
+        "peasant.n.01": 1
+    },
+    "highschool": {
+        "highschool.n.01": 1
+    },
+    "dramatics": {
+        "dramatics.n.01": 1
+    },
+    "course": {
+        "course.n.01": 1,
+        "course.n.02": 1
+    },
+    "fact": {
+        "fact.n.01": 1,
+        "fact.n.04": 1
+    },
+    "truth": {
+        "truth.n.01": 1,
+        "NN": 1
+    },
+    "human_beings": {
+        "human_being.n.01": 1
+    },
+    "project": {
+        "project.n.01": 1,
+        "NN": 1
+    },
+    "competition": {
+        "competition.n.03": 1,
+        "NN": 1
+    },
+    "grave": {
+        "grave.n.01": 2
+    },
+    "fish": {
+        "fish.n.03": 1
+    },
+    "bait": {
+        "bait.n.01": 1
+    },
+    "pass": {
+        "pass.n.06": 1
+    },
+    "slip_of_paper": {
+        "slip_of_paper.n.01": 1
+    },
+    "belt": {
+        "belt.n.02": 1
+    },
+    "writers": {
+        "writer.n.01": 1
+    },
+    "bomb_shelter": {
+        "bomb_shelter.n.01": 1
+    },
+    "plaster-of-Paris": {
+        "plaster_of_paris.n.01": 1
+    },
+    "ducks": {
+        "duck.n.01": 1
+    },
+    "birdbath": {
+        "birdbath.n.01": 1
+    },
+    "composition": {
+        "composition.n.03": 1
+    },
+    "gnomes": {
+        "gnome.n.01": 1
+    },
+    "beards": {
+        "beard.n.01": 1
+    },
+    "mobcaps": {
+        "mobcap.n.01": 1
+    },
+    "dead": {
+        "dead.n.01": 1
+    },
+    "nephews": {
+        "nephew.n.01": 1
+    },
+    "journey": {
+        "journey.n.01": 1
+    },
+    "soil": {
+        "soil.n.02": 1
+    },
+    "notification": {
+        "notification.n.01": 1
+    },
+    "events": {
+        "event.n.01": 1
+    },
+    "lives": {
+        "life.n.06": 1
+    },
+    "marriages": {
+        "marriage.n.01": 1
+    },
+    "births": {
+        "birth.n.02": 1
+    },
+    "divorce": {
+        "divorce.n.01": 2
+    },
+    "Christmas": {
+        "christmas_card.n.01": 1
+    },
+    "Easter_cards": {
+        "easter_card.n.01": 1
+    },
+    "sort": {
+        "sort.n.01": 1,
+        "NN": 1
+    },
+    "link": {
+        "link.n.02": 1,
+        "link.n.01": 1
+    },
+    "thoughts": {
+        "thought.n.01": 1
+    },
+    "eyes": {
+        "eye.n.01": 2
+    },
+    "whisky": {
+        "whisky.n.01": 1
+    },
+    "noise": {
+        "noise.n.01": 1
+    },
+    "rage": {
+        "rage.n.01": 1
+    },
+    "kid": {
+        "kid.n.01": 1
+    },
+    "steps": {
+        "steps.n.01": 1
+    },
+    "Pa": {
+        "pa.n.01": 1
+    },
+    "covers": {
+        "cover.n.02": 1
+    },
+    "dung": {
+        "dung.n.01": 1
+    },
+    "snow": {
+        "snow.n.02": 1,
+        "NN": 1
+    },
+    "mid_fifties": {
+        "mid-fifties.n.01": 1
+    },
+    "establishment": {
+        "establishment.n.01": 1
+    },
+    "name": {
+        "name.n.02": 1,
+        "name.n.01": 2,
+        "NN": 3
+    },
+    "wish": {
+        "wish.n.01": 1
+    },
+    "decade": {
+        "decade.n.01": 2
+    },
+    "lecturing": {
+        "lecturing.n.01": 1
+    },
+    "doubt": {
+        "doubt.n.02": 1,
+        "NN": 1
+    },
+    "structures": {
+        "structure.n.01": 1
+    },
+    "success": {
+        "success.n.03": 1
+    },
+    "bride": {
+        "bride.n.01": 1
+    },
+    "hatching": {
+        "hatching.n.01": 1
+    },
+    "tray": {
+        "tray.n.01": 1,
+        "NN": 1
+    },
+    "girl": {
+        "girl.n.02": 1
+    },
+    "look": {
+        "look.n.01": 1,
+        "NN": 2
+    },
+    "person": {
+        "person.n.01": 2,
+        "NN": 1
+    },
+    "peanut_butter": {
+        "peanut_butter.n.01": 1
+    },
+    "sandwich": {
+        "sandwich.n.01": 1
+    },
+    "fingerprint_man": {
+        "fingerprint_man.n.01": 1
+    },
+    "prints": {
+        "fingerprint.n.01": 1,
+        "print.n.02": 1
+    },
+    "killer": {
+        "killer.n.01": 1
+    },
+    "piano_player": {
+        "piano_player.n.01": 1
+    },
+    "newspapers": {
+        "newspaper.n.01": 1
+    },
+    "Someone": {
+        "someone.n.01": 1
+    },
+    "staff": {
+        "staff.n.01": 2,
+        "NN": 3
+    },
+    "self": {
+        "self.n.01": 1
+    },
+    "brothers": {
+        "brother.n.02": 1
+    },
+    "let": {
+        "NN": 1
+    },
+    "Self": {
+        "self.n.01": 1
+    },
+    "integrity": {
+        "integrity.n.01": 1
+    },
+    "expense": {
+        "expense.n.01": 1
+    },
+    "vessel": {
+        "vessel.n.02": 1
+    },
+    "quirt": {
+        "quirt.n.01": 1
+    },
+    "wrist": {
+        "wrist.n.01": 1
+    },
+    "fire": {
+        "fire.n.01": 1
+    },
+    "effort": {
+        "effort.n.01": 4,
+        "NN": 1
+    },
+    "anger": {
+        "anger.n.01": 1
+    },
+    "Old_Man": {
+        "old_man.n.01": 1
+    },
+    "bell": {
+        "bell.n.01": 1
+    },
+    "church_tower": {
+        "church_tower.n.01": 1
+    },
+    "Mass": {
+        "mass.n.04": 1
+    },
+    "noon": {
+        "noon.n.01": 2
+    },
+    "six": {
+        "six.n.01": 1
+    },
+    "tone": {
+        "tone.n.07": 1,
+        "tone.n.01": 1
+    },
+    "boredom": {
+        "boredom.n.01": 1,
+        "NN": 1
+    },
+    "Nothing": {
+        "nothing.n.01": 1
+    },
+    "English": {
+        "english.n.01": 1,
+        "english.n.3;1": 1
+    },
+    "words": {
+        "word.n.01": 1,
+        "words.n.01": 1
+    },
+    "sentences": {
+        "sentence.n.01": 2
+    },
+    "afternoon": {
+        "afternoon.n.01": 1,
+        "NN": 2
+    },
+    "Anglo-American": {
+        "anglo-american.n.01": 1
+    },
+    "critic": {
+        "critic.n.01": 1
+    },
+    "mother": {
+        "mother.n.01": 1,
+        "NN": 3
+    },
+    "Ohio": {
+        "ohio.n.01": 1
+    },
+    "fairy-tale": {
+        "fairytale.n.01": 1
+    },
+    "cottage": {
+        "cottage.n.01": 1,
+        "NN": 2
+    },
+    "peacocks": {
+        "peacock.n.01": 1
+    },
+    "gentleman": {
+        "gentleman.n.01": 1,
+        "NN": 1
+    },
+    "old_man": {
+        "old_man.n.01": 1
+    },
+    "literature": {
+        "literature.n.01": 3,
+        "literature.n.03": 1
+    },
+    "stature": {
+        "stature.n.01": 3
+    },
+    "hope": {
+        "hope.n.02": 1,
+        "NN": 2
+    },
+    "humor": {
+        "humor.n.03": 1,
+        "humor.n.2;1": 2
+    },
+    "speed": {
+        "speed.n.01": 1
+    },
+    "weightlessness": {
+        "weightlessness.n.01": 1
+    },
+    "distance": {
+        "distance.n.03": 1
+    },
+    "earth": {
+        "earth.n.01": 1,
+        "NN": 2
+    },
+    "mind": {
+        "mind.n.01": 1,
+        "mind.n.02": 1,
+        "NN": 1
+    },
+    "children": {
+        "child.n.01": 2
+    },
+    "horse": {
+        "horse.n.01": 1
+    },
+    "vignette": {
+        "vignette.n.01": 1
+    },
+    "epoch": {
+        "epoch.n.01": 1
+    },
+    "hero": {
+        "hero.n.02": 1
+    },
+    "sides": {
+        "side.n.06": 1
+    },
+    "manhood": {
+        "manhood.n.01": 1
+    },
+    "misconception": {
+        "misconception.n.01": 1
+    },
+    "minds": {
+        "mind.n.01": 2
+    },
+    "collective": {
+        "collective.n.01": 1
+    },
+    "title": {
+        "title.n.02": 1,
+        "title.n.01": 1,
+        "NN": 1
+    },
+    "invitation": {
+        "invitation.n.01": 1
+    },
+    "Anniversary": {
+        "anniversary.n.01": 1
+    },
+    "April": {
+        "april.n.01": 3
+    },
+    "issue": {
+        "issue.n.02": 1,
+        "NN": 4
+    },
+    "Union_of_Soviet_Socialist_Republics": {
+        "union_of_soviet_socialist_republics.n.01": 1
+    },
+    "United_States_of_America": {
+        "united_states_of_america.n.01": 2,
+        "NN": 1
+    },
+    "pranks": {
+        "prank.n.01": 1
+    },
+    "bonheur": {
+        "NN": 1
+    },
+    "musician": {
+        "musician.n.02": 1
+    },
+    "landscape": {
+        "landscape.n.03": 1
+    },
+    "painter": {
+        "painter.n.01": 1
+    },
+    "kinship": {
+        "kinship.n.01": 1
+    },
+    "watercolorists": {
+        "watercolorist.n.01": 1
+    },
+    "art": {
+        "art.n.01": 4,
+        "NN": 1
+    },
+    "master": {
+        "master.n.01": 1,
+        "NN": 1
+    },
+    "masses": {
+        "mass.n.03": 1
+    },
+    "design": {
+        "design.n.01": 1,
+        "NN": 1
+    },
+    "distillation": {
+        "distillation.n.01": 1
+    },
+    "taxpayer": {
+        "taxpayer.n.01": 1
+    },
+    "defense": {
+        "defense.n.01": 2,
+        "defense.n.04": 1,
+        "NN": 3
+    },
+    "budget": {
+        "budget.n.01": 1,
+        "NN": 1
+    },
+    "readers": {
+        "reader.n.02": 1,
+        "reader.n.3;1": 1
+    },
+    "portion": {
+        "portion.n.03": 1,
+        "NN": 2
+    },
+    "expenditures": {
+        "expenditure.n.01": 1
+    },
+    "electronics": {
+        "electronics.n.01": 1
+    },
+    "commerce": {
+        "commerce.n.01": 1
+    },
+    "industry": {
+        "industry.n.02": 1,
+        "industry.n.01": 1,
+        "NN": 1
+    },
+    "boyhood": {
+        "boyhood.n.01": 1
+    },
+    "chance": {
+        "chance.n.01": 1
+    },
+    "greatness": {
+        "greatness.n.01": 1
+    },
+    "span": {
+        "span.n.01": 1
+    },
+    "island": {
+        "island.n.01": 2,
+        "NN": 2
+    },
+    "Denmark": {
+        "denmark.n.01": 1
+    },
+    "August": {
+        "august.n.01": 1
+    },
+    "feed": {
+        "feed.n.01": 1
+    },
+    "additives": {
+        "additive.n.01": 2
+    },
+    "dairy": {
+        "dairyman.n.01": 1
+    },
+    "sheep_men": {
+        "sheepman.n.01": 1
+    },
+    "target": {
+        "target.n.05": 1
+    },
+    "chart": {
+        "chart.n.01": 1
+    },
+    "Marketing": {
+        "marketing.n.01": 1
+    },
+    "picnic": {
+        "picnic.n.02": 1
+    },
+    "sixties": {
+        "sixties.n.01": 1
+    },
+    "activity": {
+        "activity.n.01": 1
+    },
+    "yr.": {
+        "yr.n.01": 1
+    },
+    "objectives": {
+        "objective.n.01": 2
+    },
+    "benefit": {
+        "benefit.n.01": 1
+    },
+    "service": {
+        "service.n.05": 1,
+        "service.n.01": 1,
+        "NN": 1
+    },
+    "program": {
+        "program.n.02": 3,
+        "NN": 1
+    },
+    "giveaway": {
+        "giveaway.n.01": 1
+    },
+    "goal": {
+        "goal.n.01": 1
+    },
+    "employee": {
+        "employee.n.01": 1
+    },
+    "morale": {
+        "morale.n.01": 1
+    },
+    "productivity": {
+        "productivity.n.01": 1
+    },
+    "column": {
+        "column.n.01": 1
+    },
+    "sportsmen": {
+        "sportsman.n.01": 1
+    },
+    "era": {
+        "era.n.01": 1,
+        "NN": 1
+    },
+    "Modern_times": {
+        "modern_times.n.01": 1
+    },
+    "recognition": {
+        "recognition.n.02": 1,
+        "NN": 1
+    },
+    "tradition": {
+        "tradition.n.01": 1,
+        "NN": 1
+    },
+    "poetry": {
+        "poetry.n.01": 1
+    },
+    "marriage_bed": {
+        "marriage_bed.n.01": 1
+    },
+    "harmony": {
+        "harmony.n.01": 1
+    },
+    "love": {
+        "love.n.01": 1
+    },
+    "share": {
+        "share.n.01": 3
+    },
+    "joy": {
+        "joy.n.01": 1
+    },
+    "Farming": {
+        "farming.n.01": 1
+    },
+    "farmer": {
+        "farmer.n.01": 1
+    },
+    "demands": {
+        "demand.n.03": 1
+    },
+    "crops": {
+        "crop.n.01": 1
+    },
+    "livestock": {
+        "livestock.n.01": 1
+    },
+    "Everyone": {
+        "NN": 1
+    },
+    "tragedy": {
+        "tragedy.n.01": 1
+    },
+    "court": {
+        "court.n.01": 1
+    },
+    "dirge": {
+        "dirge.n.01": 1
+    },
+    "defendant": {
+        "defendant.n.01": 1
+    },
+    "fathers": {
+        "father.n.01": 1
+    },
+    "mothers": {
+        "mother.n.01": 1
+    },
+    "graybeards": {
+        "graybeard.n.01": 1
+    },
+    "adolescents": {
+        "adolescent.n.01": 1
+    },
+    "babies": {
+        "baby.n.01": 1
+    },
+    "Roman_Catholic": {
+        "roman_catholic.n.02": 1
+    },
+    "physicians": {
+        "physician.n.01": 1
+    },
+    "ultimatum": {
+        "ultimatum.n.01": 1
+    },
+    "bark": {
+        "bark.n.03": 1
+    },
+    "London": {
+        "london.n.01": 1
+    },
+    "captain": {
+        "captain.n.04": 1
+    },
+    "crew": {
+        "crew.n.01": 1
+    },
+    "provisions": {
+        "provisions.n.01": 1
+    },
+    "voyage": {
+        "voyage.n.01": 1
+    },
+    "exploration": {
+        "exploration.n.01": 1
+    },
+    "Arctic": {
+        "arctic.n.01": 1
+    },
+    "waters": {
+        "water.n.02": 1
+    },
+    "North_America": {
+        "north_america.n.01": 1
+    },
+    "Earl": {
+        "earl.n.01": 1
+    },
+    "Scot": {
+        "scot.n.01": 1
+    },
+    "plight": {
+        "plight.n.01": 1
+    },
+    "crofters": {
+        "crofter.n.01": 1
+    },
+    "plan": {
+        "plan.n.01": 1,
+        "NN": 1
+    },
+    "valley": {
+        "valley.n.01": 2
+    },
+    "Red_River": {
+        "red_river.n.01": 1
+    },
+    "North": {
+        "north.n.01": 1
+    },
+    "empire": {
+        "empire.n.01": 1
+    },
+    "policies": {
+        "policy.n.01": 2
+    },
+    "letters": {
+        "letter.n.01": 2
+    },
+    "common_soldiers": {
+        "common_soldier.n.01": 1
+    },
+    "whole": {
+        "whole.n.00": 1
+    },
+    "blue": {
+        "blue.n.03": 1
+    },
+    "and": {
+        "NN": 1
+    },
+    "gray": {
+        "gray.n.03": 1
+    },
+    "arrangement": {
+        "arrangement.n.01": 1,
+        "NN": 1
+    },
+    "peace": {
+        "peace.n.02": 1,
+        "NN": 2
+    },
+    "good_will": {
+        "good_will.n.01": 1
+    },
+    "support": {
+        "support.n.02": 1
+    },
+    "campaign": {
+        "campaign.n.01": 1,
+        "NN": 2
+    },
+    "proceeds": {
+        "proceeds.n.01": 1
+    },
+    "cut": {
+        "cut.n.01": 1
+    },
+    "in": {
+        "NN": 2
+    },
+    "trade": {
+        "trade.n.03": 1
+    },
+    "coalition": {
+        "coalition.n.01": 1
+    },
+    "tsunami": {
+        "tsunami.n.01": 1
+    },
+    "sea_bottom": {
+        "sea_bottom.n.01": 1
+    },
+    "slide": {
+        "slide.n.02": 1
+    },
+    "earthquake": {
+        "earthquake.n.01": 1,
+        "NN": 1
+    },
+    "volcanic_eruption": {
+        "volcanic_eruption.n.01": 1
+    },
+    "explosion": {
+        "explosion.n.02": 1
+    },
+    "Pacific": {
+        "pacific.n.01": 1
+    },
+    "miles": {
+        "mile.n.01": 1
+    },
+    "coasts": {
+        "coast.n.01": 1
+    },
+    "Java": {
+        "java.n.01": 1
+    },
+    "Sumatra": {
+        "sumatra.n.01": 1
+    },
+    "shore": {
+        "shore.n.01": 1
+    },
+    "San_Francisco": {
+        "san_francisco.n.01": 1,
+        "NN": 2
+    },
+    "Ireland": {
+        "ireland.n.01": 1
+    },
+    "suburb": {
+        "suburb.n.01": 1
+    },
+    "Garden": {
+        "garden.n.01": 1
+    },
+    "residents": {
+        "resident.n.01": 1
+    },
+    "history": {
+        "history.n.01": 2,
+        "history.n.04": 1,
+        "NN": 3
+    },
+    "deeds": {
+        "deed.n.00": 1
+    },
+    "valor": {
+        "valor.n.01": 1
+    },
+    "assumptions": {
+        "assumption.n.02": 1
+    },
+    "everyone": {
+        "NN": 1
+    },
+    "columns": {
+        "column.n.05": 1
+    },
+    "cartoons": {
+        "cartoon.n.01": 1
+    },
+    "rattle": {
+        "rattle.n.01": 1
+    },
+    "machine_guns": {
+        "machine_gun.n.01": 1
+    },
+    "voices": {
+        "voice.n.04": 1
+    },
+    "faces": {
+        "face.n.03": 1
+    },
+    "fear": {
+        "fear.n.01": 1
+    },
+    "interviews": {
+        "interview.n.01": 1
+    },
+    "teen-agers": {
+        "teenager.n.01": 1
+    },
+    "portrait": {
+        "portrait.n.01": 1
+    },
+    "weakening": {
+        "weakening.n.01": 1
+    },
+    "bonds": {
+        "bond.n.03": 1
+    },
+    "identity": {
+        "identity.n.02": 1
+    },
+    "strivings": {
+        "striving.n.01": 1
+    },
+    "districts": {
+        "district.n.01": 1
+    },
+    "job": {
+        "job.n.01": 1,
+        "job.n.02": 1,
+        "NN": 1
+    },
+    "vocational_programs": {
+        "vocational_program.n.01": 1
+    },
+    "money": {
+        "money.n.01": 1,
+        "money.n.02": 1,
+        "NN": 1
+    },
+    "tie": {
+        "tie.n.03": 1
+    },
+    "labor_union": {
+        "labor_union.n.01": 1
+    },
+    "employer": {
+        "employer.n.01": 1
+    },
+    "teacher": {
+        "teacher.n.01": 1
+    },
+    "interest": {
+        "interest.n.01": 1,
+        "NN": 2
+    },
+    "metropolis": {
+        "metropolis.n.01": 1
+    },
+    "membership": {
+        "membership.n.01": 2
+    },
+    "thing": {
+        "thing.n.06": 1,
+        "NN": 5
+    },
+    "congregation": {
+        "congregation.n.01": 1
+    },
+    "letter": {
+        "letter.n.01": 1,
+        "NN": 1
+    },
+    "hotel": {
+        "hotel.n.01": 2
+    },
+    "Sunday": {
+        "sunday.n.01": 1
+    },
+    "lobby": {
+        "lobby.n.01": 1
+    },
+    "clock": {
+        "clock.n.01": 1
+    },
+    "fences": {
+        "fence.n.01": 1
+    },
+    "front": {
+        "front.n.01": 1
+    },
+    "iron": {
+        "iron.n.01": 1
+    },
+    "circles": {
+        "circle.n.01": 1
+    },
+    "imitation": {
+        "imitation.n.03": 1
+    },
+    "powerfulness": {
+        "powerfulness.n.01": 1
+    },
+    "rationale": {
+        "rationale.n.01": 1
+    },
+    "witness": {
+        "witness.n.03": 1
+    },
+    "unreason": {
+        "unreason.n.01": 1
+    },
+    "non-interference": {
+        "noninterference.n.01": 1
+    },
+    "indications": {
+        "indication.n.01": 2
+    },
+    "melioration": {
+        "melioration.n.01": 1
+    },
+    "twentieth": {
+        "twentieth.n.01": 1
+    },
+    "recipients": {
+        "recipient.n.01": 1
+    },
+    "Nobel_Prize": {
+        "nobel_prize.n.01": 1
+    },
+    "Literature": {
+        "literature.n.04": 1
+    },
+    "discoveries": {
+        "discovery.n.02": 1
+    },
+    "poet": {
+        "poet.n.01": 1
+    },
+    "novelist": {
+        "novelist.n.01": 1
+    },
+    "award": {
+        "award.n.3;2": 1,
+        "award.n.01": 2,
+        "NN": 1
+    },
+    "centennial": {
+        "centennial.n.01": 1
+    },
+    "private_detective": {
+        "private_detective.n.01": 2
+    },
+    "insurance_claims": {
+        "insurance_claim.n.01": 1
+    },
+    "struggle": {
+        "struggle.n.01": 1,
+        "NN": 1
+    },
+    "background": {
+        "background.n.01": 1,
+        "NN": 1
+    },
+    "organization": {
+        "organization.n.01": 1,
+        "NN": 1
+    },
+    "network": {
+        "network.n.01": 3
+    },
+    "messages": {
+        "message.n.02": 1
+    },
+    "stress": {
+        "stress.n.03": 1,
+        "stress.n.01": 2
+    },
+    "role": {
+        "role.n.01": 2
+    },
+    "monitoring": {
+        "monitoring.n.01": 1
+    },
+    "thought": {
+        "thought.n.03": 1,
+        "thought.n.02": 1
+    },
+    "relation": {
+        "relation.n.01": 1
+    },
+    "movement": {
+        "movement.n.04": 1,
+        "NN": 2
+    },
+    "Faith": {
+        "faith.n.01": 1
+    },
+    "incipience": {
+        "incipience.n.01": 1
+    },
+    "society": {
+        "society.n.01": 1,
+        "NN": 1
+    },
+    "technology": {
+        "technology.n.01": 1
+    },
+    "civilization": {
+        "civilization.n.01": 2,
+        "NN": 1
+    },
+    "analogy": {
+        "analogy.n.00": 1
+    },
+    "cancer": {
+        "cancer.n.01": 1
+    },
+    "cancers": {
+        "cancer.n.01": 1
+    },
+    "rate": {
+        "rate.n.01": 1
+    },
+    "administration": {
+        "administration.n.04": 1,
+        "NN": 1
+    },
+    "red_scare": {
+        "red_scare.n.01": 1
+    },
+    "Americans": {
+        "american.n.01": 1
+    },
+    "challenge": {
+        "challenge.n.01": 1
+    },
+    "Russia": {
+        "russia.n.01": 1
+    },
+    "repression": {
+        "repression.n.01": 1
+    },
+    "ideas": {
+        "idea.n.01": 1
+    },
+    "force": {
+        "force.n.06": 1,
+        "force.n.01": 1,
+        "NN": 1
+    },
+    "essay": {
+        "essay.n.01": 1
+    },
+    "thesis": {
+        "thesis.n.01": 1
+    },
+    "temptation": {
+        "temptation.n.01": 1
+    },
+    "authors": {
+        "author.n.01": 1
+    },
+    "Herman_Melville": {
+        "herman_melville.n.01": 1
+    },
+    "modernism": {
+        "modernism.n.01": 1
+    },
+    "progress": {
+        "progress.n.01": 1
+    },
+    "feeling_of_identity": {
+        "feeling_of_identity.n.00": 1
+    },
+    "discovery": {
+        "discovery.n.01": 1
+    },
+    "coincidence": {
+        "coincidence.n.01": 1
+    },
+    "epitaph": {
+        "epitaph.n.01": 1
+    },
+    "cemetery": {
+        "cemetery.n.01": 1
+    },
+    "Venice": {
+        "venice.n.01": 1
+    },
+    "Sulamite": {
+        "NN": 1
+    },
+    "texture": {
+        "texture.n.02": 1
+    },
+    "tapestry": {
+        "tapestry.n.01": 1
+    },
+    "drama": {
+        "drama.n.02": 1,
+        "NN": 1
+    },
+    "artist": {
+        "artist.n.01": 1
+    },
+    "strands": {
+        "strand.n.01": 1
+    },
+    "insights": {
+        "insight.n.01": 1
+    },
+    "nature": {
+        "nature.n.01": 1,
+        "NN": 2
+    },
+    "conflict": {
+        "conflict.n.04": 1
+    },
+    "characters": {
+        "character.n.05": 1
+    },
+    "pair": {
+        "pair.n.03": 1
+    },
+    "relations": {
+        "relations.n.01": 2
+    },
+    "giver": {
+        "giver.n.01": 1
+    },
+    "receiver": {
+        "receiver.n.04": 1
+    },
+    "demander": {
+        "demander.n.01": 1
+    },
+    "winter": {
+        "winter.n.01": 1
+    },
+    "collaboration": {
+        "collaboration.n.01": 1
+    },
+    "film": {
+        "film.n.01": 1
+    },
+    "return": {
+        "return.n.03": 1,
+        "NN": 1
+    },
+    "bit": {
+        "bit.n.01": 1
+    },
+    "satire": {
+        "satire.n.01": 1
+    },
+    "bobby-soxer": {
+        "bobbysoxer.n.01": 1
+    },
+    "craze": {
+        "craze.n.01": 1
+    },
+    "facets": {
+        "facet.n.01": 1
+    },
+    "aspect": {
+        "aspect.n.01": 1
+    },
+    "significance": {
+        "significance.n.01": 1
+    },
+    "reservation": {
+        "reservation.n.02": 1
+    },
+    "point": {
+        "point.n.04": 1
+    },
+    "phenomenon": {
+        "phenomenon.n.02": 1
+    },
+    "thinking": {
+        "thinking.n.01": 1,
+        "NN": 2
+    },
+    "willing": {
+        "willing.n.01": 1
+    },
+    "philosopher": {
+        "philosopher.n.01": 1,
+        "NN": 1
+    },
+    "sympathy": {
+        "sympathy.n.03": 1,
+        "sympathy.n.01": 1
+    },
+    "music-hall": {
+        "music_hall.n.01": 1
+    },
+    "picture-palace": {
+        "picture_palace.n.01": 1
+    },
+    "Shakespeare": {
+        "shakespeare.n.01": 1
+    },
+    "past": {
+        "past.n.01": 1
+    },
+    "present": {
+        "present.n.01": 1
+    },
+    "carvings": {
+        "carving.n.01": 1
+    },
+    "cavemen": {
+        "caveman.n.01": 1
+    },
+    "possibility": {
+        "possibility.n.02": 2,
+        "NN": 1
+    },
+    "achievement": {
+        "achievement.n.01": 2
+    },
+    "centuries": {
+        "century.n.01": 1
+    },
+    "Senate": {
+        "senate.n.02": 1
+    },
+    "House_of_Representatives": {
+        "house_of_representatives.n.01": 1
+    },
+    "Congress": {
+        "congress.n.01": 2
+    },
+    "Act": {
+        "act.n.01": 1
+    },
+    "July": {
+        "july.n.01": 1
+    },
+    "shortage": {
+        "shortage.n.02": 1,
+        "NN": 1
+    },
+    "ground_water": {
+        "ground_water.n.01": 1
+    },
+    "Nation": {
+        "nation.n.00": 1,
+        "NN": 1
+    },
+    "importance": {
+        "importance.n.01": 1
+    },
+    "sources": {
+        "source.n.01": 1
+    },
+    "supply": {
+        "supply.n.01": 1,
+        "supply.n.02": 1
+    },
+    "future": {
+        "future.n.01": 2,
+        "NN": 1
+    },
+    "water": {
+        "water.n.01": 3,
+        "NN": 1
+    },
+    "needs": {
+        "need.n.02": 1
+    },
+    "policy": {
+        "policy.n.01": 1
+    },
+    "means": {
+        "means.n.01": 2,
+        "NN": 2
+    },
+    "uses": {
+        "use.n.02": 1
+    },
+    "studies": {
+        "study.n.01": 1
+    },
+    "method": {
+        "method.n.01": 2
+    },
+    "combustion": {
+        "combustion.n.01": 1
+    },
+    "bomb_calorimeter": {
+        "bomb_calorimeter.n.01": 1
+    },
+    "metal": {
+        "metal.n.01": 1
+    },
+    "fluorine": {
+        "fluorine.n.01": 1
+    },
+    "heat_of_formation": {
+        "heat_of_formation.n.01": 1
+    },
+    "aluminum": {
+        "aluminum.n.01": 1
+    },
+    "fluoride": {
+        "fluoride.n.01": 1
+    },
+    "percent": {
+        "percent.n.01": 1
+    },
+    "penalties": {
+        "penalty.n.01": 1
+    },
+    "United_States": {
+        "united_states.n.02": 2,
+        "NN": 4
+    },
+    "Code": {
+        "code.n.01": 1
+    },
+    "section": {
+        "section.n.01": 1,
+        "section.n.03": 1
+    },
+    "Title": {
+        "title.n.01": 4
+    },
+    "rights": {
+        "right.n.01": 1
+    },
+    "payment": {
+        "payment.n.01": 1
+    },
+    "Commission": {
+        "commission.n.01": 3
+    },
+    "connection": {
+        "connection.n.01": 1
+    },
+    "claim": {
+        "claim.n.01": 2,
+        "claim.n.03": 1,
+        "NN": 1
+    },
+    "request": {
+        "request.n.01": 1
+    },
+    "claimant": {
+        "claimant.n.01": 2
+    },
+    "attorney": {
+        "attorney.n.01": 2
+    },
+    "fees": {
+        "fee.n.01": 2
+    },
+    "services": {
+        "services.n.01": 1
+    },
+    "amount": {
+        "amount.n.01": 2,
+        "amount.n.02": 1,
+        "NN": 1
+    },
+    "per_centum": {
+        "percent.n.01": 1
+    },
+    "commuter": {
+        "commuter.n.01": 2
+    },
+    "railroads": {
+        "railroad.n.01": 2
+    },
+    "population": {
+        "population.n.01": 1,
+        "NN": 1
+    },
+    "causes": {
+        "cause.n.01": 1
+    },
+    "taxes": {
+        "tax.n.01": 1
+    },
+    "losses": {
+        "losses.n.01": 1
+    },
+    "revenue": {
+        "revenue.n.01": 1
+    },
+    "Government": {
+        "government.n.01": 1
+    },
+    "highway": {
+        "highway.n.01": 1,
+        "NN": 1
+    },
+    "carriers": {
+        "carrier.n.02": 1
+    },
+    "inception": {
+        "inception.n.01": 1
+    },
+    "passage": {
+        "passage.n.04": 1
+    },
+    "Public_Law": {
+        "public_law.n.01": 1
+    },
+    "rehabilitation_program": {
+        "rehabilitation_program.n.01": 2
+    },
+    "States": {
+        "state.n.01": 1
+    },
+    "grants-in-aid": {
+        "grant-in-aid.n.01": 1
+    },
+    "employment": {
+        "employment.n.01": 1,
+        "employment.n.02": 1
+    },
+    "authority": {
+        "authority.n.06": 1,
+        "NN": 1
+    },
+    "Social_Security_Act": {
+        "NE": 1
+    },
+    "entrance": {
+        "entrance.n.01": 1
+    },
+    "roof": {
+        "roof.n.01": 1
+    },
+    "beam": {
+        "beam.n.02": 1,
+        "NN": 1
+    },
+    "inches": {
+        "inch.n.01": 1
+    },
+    "block": {
+        "block.n.01": 1
+    },
+    "wall": {
+        "wall.n.01": 1
+    },
+    "inch": {
+        "inch.n.01": 1
+    },
+    "edge": {
+        "edge.n.01": 1
+    },
+    "official": {
+        "official.n.01": 1
+    },
+    "vice_president": {
+        "vice_president.n.01": 1
+    },
+    "Lines": {
+        "line.n.21": 1
+    },
+    "communications": {
+        "communication.n.01": 1
+    },
+    "companies": {
+        "company.n.01": 1
+    },
+    "quirk": {
+        "quirk.n.01": 1
+    },
+    "attitude": {
+        "attitude.n.01": 1,
+        "NN": 2
+    },
+    "husbands": {
+        "husband.n.01": 1
+    },
+    "wives": {
+        "wife.n.01": 1
+    },
+    "risk": {
+        "risk.n.01": 1
+    },
+    "confidentiality": {
+        "confidentiality.n.01": 1
+    },
+    "marriage": {
+        "marriage.n.01": 2
+    },
+    "pronouncement": {
+        "pronouncement.n.01": 1
+    },
+    "point_of_view": {
+        "point_of_view.n.01": 1
+    },
+    "concept": {
+        "concept.n.01": 1
+    },
+    "oneness": {
+        "oneness.n.01": 1
+    },
+    "married_couple": {
+        "married_couple.n.01": 1
+    },
+    "belief": {
+        "belief.n.01": 1
+    },
+    "husband": {
+        "husband.n.01": 1,
+        "NN": 1
+    },
+    "actions": {
+        "action.n.01": 1
+    },
+    "criminal_law": {
+        "criminal_law.n.01": 1
+    },
+    "suggestions": {
+        "suggestion.n.02": 1
+    },
+    "difference": {
+        "difference.n.02": 1,
+        "NN": 1
+    },
+    "Department": {
+        "department.n.01": 1
+    },
+    "foreign_policy": {
+        "foreign_policy.n.01": 1,
+        "NN": 1
+    },
+    "context": {
+        "context.n.02": 1
+    },
+    "Strategy": {
+        "strategy.n.01": 1
+    },
+    "tactics": {
+        "tactics.n.01": 1
+    },
+    "U._S.": {
+        "u.s..n.01": 1
+    },
+    "military_forces": {
+        "military_force.n.01": 1
+    },
+    "transitions": {
+        "transition.n.02": 1
+    },
+    "change": {
+        "change.n.02": 3,
+        "change.n.04": 1
+    },
+    "missile": {
+        "missile.n.01": 1
+    },
+    "warfare": {
+        "warfare.n.01": 2,
+        "NN": 2
+    },
+    "care": {
+        "care.n.02": 1,
+        "NN": 1
+    },
+    "favor": {
+        "favor.n.03": 1
+    },
+    "Deduction": {
+        "deduction.n.01": 1
+    },
+    "Tax": {
+        "tax.n.01": 1
+    },
+    "deductions": {
+        "deduction.n.01": 1
+    },
+    "amended_return": {
+        "amended_return.n.01": 1
+    },
+    "refund": {
+        "refund.n.01": 1
+    },
+    "You_May_Claim_a_Refund": {
+        "NE": 1
+    },
+    "Page": {
+        "page.n.01": 1
+    },
+    "communities": {
+        "community.n.01": 1
+    },
+    "respect": {
+        "respect.n.01": 1
+    },
+    "to": {
+        "NN": 1
+    },
+    "variable": {
+        "variable.n.01": 1
+    },
+    "structure": {
+        "structure.n.03": 1
+    },
+    "teaching_method": {
+        "teaching_method.n.01": 1
+    },
+    "schools": {
+        "school.n.01": 1
+    },
+    "city": {
+        "city.n.01": 1,
+        "NN": 8
+    },
+    "tenement_houses": {
+        "tenement_house.n.01": 1
+    },
+    "homes": {
+        "home.n.02": 1
+    },
+    "Analysis": {
+        "analysis.n.01": 2
+    },
+    "evaluation": {
+        "evaluation.n.01": 1
+    },
+    "subparts": {
+        "subpart.n.01": 1
+    },
+    "ratings": {
+        "rating.n.03": 1
+    },
+    "comprehension": {
+        "comprehension.n.01": 1
+    },
+    "roleplaying": {
+        "roleplaying.n.01": 1
+    },
+    "strong": {
+        "strong_point.n.01": 1
+    },
+    "weak_points": {
+        "weak_point.n.01": 1
+    },
+    "individual": {
+        "individual.n.01": 1
+    },
+    "weak_parts": {
+        "weak_part.n.01": 1
+    },
+    "good_parts": {
+        "good_part.n.01": 1
+    },
+    "therapist": {
+        "therapist.n.01": 1
+    },
+    "communicating": {
+        "communicating.n.01": 1
+    },
+    "introject": {
+        "introject.n.01": 1
+    },
+    "voice": {
+        "voice.n.02": 1
+    },
+    "instances": {
+        "instance.n.01": 1
+    },
+    "dictionary": {
+        "dictionary.n.01": 2
+    },
+    "contents": {
+        "content.n.01": 1
+    },
+    "prefixes": {
+        "prefix.n.01": 1
+    },
+    "suffixes": {
+        "suffix.n.01": 1
+    },
+    "reduction": {
+        "reduction.n.01": 1
+    },
+    "voume": {
+        "volume.n.02": 1
+    },
+    "store": {
+        "store.n.02": 1
+    },
+    "Russian": {
+        "russian.n.02": 1
+    },
+    "patterns": {
+        "pattern.n.01": 1
+    },
+    "combinations": {
+        "combination.n.01": 1
+    },
+    "influences": {
+        "influence.n.03": 1
+    },
+    "linguists": {
+        "linguist.n.01": 1
+    },
+    "tone_systems": {
+        "tone_system.n.01": 1
+    },
+    "consonants": {
+        "consonant.n.01": 1
+    },
+    "vowels": {
+        "vowel.n.01": 1
+    },
+    "explanation": {
+        "explanation.n.01": 1,
+        "explanation.n.02": 1
+    },
+    "item": {
+        "item.n.02": 1
+    },
+    "Athabascan": {
+        "athabascan.n.01": 5
+    },
+    "languages": {
+        "language.n.01": 3
+    },
+    "Yokuts": {
+        "yokuts.n.01": 2
+    },
+    "divergence": {
+        "divergence.n.01": 1
+    },
+    "territory": {
+        "territory.n.01": 1
+    },
+    "workers": {
+        "worker.n.02": 1
+    },
+    "expectation": {
+        "expectation.n.02": 1
+    },
+    "occupation": {
+        "occupation.n.01": 2
+    },
+    "counseling": {
+        "counseling.n.01": 1
+    },
+    "retraining": {
+        "retraining.n.01": 1
+    },
+    "training_schools": {
+        "training_school.n.01": 1
+    },
+    "facilities": {
+        "facility.n.01": 1
+    },
+    "Wage": {
+        "wage.n.01": 1
+    },
+    "price": {
+        "price.n.01": 2
+    },
+    "complex": {
+        "complex.n.01": 1
+    },
+    "paper": {
+        "paper.n.02": 1
+    },
+    "contribution": {
+        "contribution.n.01": 1
+    },
+    "wage": {
+        "wage.n.01": 1
+    },
+    "behavior": {
+        "behavior.n.01": 1
+    },
+    "industries": {
+        "industry.n.01": 1
+    },
+    "law_of_nations": {
+        "law_of_nations.n.01": 1
+    },
+    "international_law": {
+        "international_law.n.01": 1
+    },
+    "factors": {
+        "factor.n.01": 1
+    },
+    "nose": {
+        "nose.n.01": 1
+    },
+    "son": {
+        "son.n.01": 1,
+        "NN": 1
+    },
+    "Dad": {
+        "dad.n.01": 1
+    },
+    "sketch_pad": {
+        "sketch_pad.n.01": 1
+    },
+    "hand": {
+        "hand.n.01": 1
+    },
+    "woman": {
+        "woman.n.01": 1,
+        "NN": 3
+    },
+    "office": {
+        "office.n.01": 3
+    },
+    "corridor": {
+        "corridor.n.01": 1
+    },
+    "pencil": {
+        "pencil.n.01": 1
+    },
+    "lines": {
+        "line.n.02": 1
+    },
+    "eyebrows": {
+        "eyebrow.n.01": 1
+    },
+    "door": {
+        "door.n.01": 2
+    },
+    "police_chief": {
+        "police_chief.n.01": 1
+    },
+    "career": {
+        "career.n.01": 1,
+        "NN": 1
+    },
+    "safe": {
+        "safe.n.01": 2
+    },
+    "gum": {
+        "gum.n.01": 1
+    },
+    "machine": {
+        "machine.n.01": 1
+    },
+    "passageway": {
+        "passageway.n.01": 1
+    },
+    "left": {
+        "left.n.01": 2
+    },
+    "lieutenant": {
+        "lieutenant.n.02": 1
+    },
+    "janitor": {
+        "janitor.n.01": 1
+    },
+    "supply_closet": {
+        "supply_closet.n.01": 1
+    },
+    "repository": {
+        "repository.n.01": 1
+    },
+    "flashlight_batteries": {
+        "flashlight_battery.n.01": 1
+    },
+    "fingerprint": {
+        "fingerprint.n.01": 1
+    },
+    "cards": {
+        "card.n.02": 1
+    },
+    "stack": {
+        "stack.n.01": 1
+    },
+    "tickets": {
+        "ticket.n.01": 1
+    },
+    "cents": {
+        "cent.n.01": 1
+    },
+    "coins": {
+        "coin.n.01": 1
+    },
+    "stamps": {
+        "stamp.n.04": 1
+    },
+    "outfit": {
+        "outfit.n.01": 1,
+        "NN": 1
+    },
+    "brand": {
+        "brand.n.03": 1
+    },
+    "sundown": {
+        "sundown.n.01": 1
+    },
+    "herd": {
+        "herd.n.01": 1
+    },
+    "grass": {
+        "grass.n.01": 1
+    },
+    "flat": {
+        "flat.n.01": 1
+    },
+    "bedground": {
+        "bedground.n.01": 1
+    },
+    "author": {
+        "author.n.02": 1
+    },
+    "notes": {
+        "note.n.02": 1
+    },
+    "cattle": {
+        "cattle.n.01": 1
+    },
+    "notices": {
+        "notice.n.01": 1
+    },
+    "minutes": {
+        "minute.n.01": 1
+    },
+    "livery_stable": {
+        "livery_stable.n.01": 1
+    },
+    "mining": {
+        "mining.n.01": 1
+    },
+    "appearance": {
+        "appearance.n.01": 1
+    },
+    "Men": {
+        "man.n.01": 1
+    },
+    "freight": {
+        "freight.n.01": 1
+    },
+    "rigs": {
+        "rig.n.01": 1
+    },
+    "teams": {
+        "team.n.02": 1
+    },
+    "November": {
+        "november.n.01": 1
+    },
+    "clouds": {
+        "cloud.n.02": 1
+    },
+    "missions": {
+        "mission.n.02": 1
+    },
+    "marks": {
+        "mark.n.02": 1
+    },
+    "combat": {
+        "combat.n.01": 1
+    },
+    "record": {
+        "record.n.04": 1,
+        "NN": 2
+    },
+    "rattling": {
+        "rattling.n.01": 1
+    },
+    "fenders": {
+        "fender.n.01": 1
+    },
+    "humming": {
+        "humming.n.01": 1
+    },
+    "tires": {
+        "tire.n.01": 1
+    },
+    "chattering": {
+        "chattering.n.01": 1
+    },
+    "gears": {
+        "gear.n.01": 1
+    },
+    "melody": {
+        "melody.n.02": 1
+    },
+    "whispers": {
+        "whisper.n.01": 1
+    },
+    "giggles": {
+        "giggle.n.01": 1
+    },
+    "air": {
+        "air.n.04": 1,
+        "NN": 1
+    },
+    "windows": {
+        "window.n.02": 1
+    },
+    "roadside": {
+        "roadside.n.01": 1
+    },
+    "vegetation": {
+        "vegetation.n.01": 1
+    },
+    "fragrance": {
+        "fragrance.n.01": 1
+    },
+    "perfume": {
+        "perfume.n.01": 1
+    },
+    "seat": {
+        "seat.n.01": 1
+    },
+    "divan": {
+        "divan.n.01": 1
+    },
+    "TV": {
+        "tv.n.02": 1
+    },
+    "west": {
+        "west.n.02": 1,
+        "NN": 1
+    },
+    "Sabine": {
+        "sabine.n.01": 1
+    },
+    "oxen": {
+        "oxen.n.01": 1
+    },
+    "three": {
+        "three.n.01": 1
+    },
+    "commissions": {
+        "commission.n.03": 1
+    },
+    "spot": {
+        "spot.n.02": 1
+    },
+    "drawings": {
+        "drawing.n.01": 1
+    },
+    "advertising_agencies": {
+        "advertising_agency.n.01": 1
+    },
+    "uptown": {
+        "uptown.n.01": 1
+    },
+    "magazine": {
+        "magazine.n.01": 1,
+        "NN": 2
+    },
+    "lettering": {
+        "lettering.n.01": 1
+    },
+    "jobs": {
+        "job.n.01": 1
+    },
+    "specialty": {
+        "specialty.n.01": 1
+    },
+    "bachelor": {
+        "bachelor.n.01": 1
+    },
+    "apartment": {
+        "apartment.n.01": 1
+    },
+    "crowd": {
+        "crowd.n.01": 1
+    },
+    "stands": {
+        "stands.n.00": 1
+    },
+    "pitcher": {
+        "pitcher.n.01": 1
+    },
+    "fast_ball": {
+        "fastball.n.01": 1
+    },
+    "took": {
+        "NN": 1
+    },
+    "a": {
+        "NN": 1
+    },
+    "hop": {
+        "hop.n.01": 1
+    },
+    "mess": {
+        "mess.n.01": 1
+    },
+    "workshop": {
+        "workshop.n.01": 1
+    },
+    "meadow": {
+        "meadow.n.01": 1
+    },
+    "neighborhood": {
+        "neighborhood.n.01": 1,
+        "NN": 1
+    },
+    "fault": {
+        "fault.n.01": 1
+    },
+    "Summerdale": {
+        "NN": 1
+    },
+    "police": {
+        "NN": 2
+    },
+    "burglary": {
+        "NN": 1
+    },
+    "guilt": {
+        "NN": 1
+    },
+    "arrest": {
+        "NN": 1
+    },
+    "Criminal_court": {
+        "NN": 1
+    },
+    "yesterday": {
+        "NN": 8
+    },
+    "disclosure": {
+        "NN": 1
+    },
+    "counsel": {
+        "NN": 1
+    },
+    "prelude": {
+        "NN": 1
+    },
+    "quarrel": {
+        "NN": 1
+    },
+    "element": {
+        "NN": 3
+    },
+    "meeting": {
+        "NN": 4
+    },
+    "North_Atlantic_Treaty_Organization": {
+        "NN": 1
+    },
+    "Foreign_Ministers": {
+        "NN": 1
+    },
+    "mutual_understanding": {
+        "NN": 1
+    },
+    "session": {
+        "NN": 3
+    },
+    "route": {
+        "NN": 1
+    },
+    "civil_defense": {
+        "NN": 1
+    },
+    "setup": {
+        "NN": 1
+    },
+    "director": {
+        "NN": 2
+    },
+    "city_council": {
+        "NN": 1
+    },
+    "anyone": {
+        "NN": 1
+    },
+    "proposal": {
+        "NN": 1
+    },
+    "remark": {
+        "NN": 1
+    },
+    "candidate": {
+        "NN": 1
+    },
+    "carcass": {
+        "NN": 1
+    },
+    "Resentment": {
+        "NN": 1
+    },
+    "district": {
+        "NN": 2
+    },
+    "county": {
+        "NN": 2
+    },
+    "running_mates": {
+        "NN": 1
+    },
+    "reaction": {
+        "NN": 1
+    },
+    "Liberal_party": {
+        "NN": 1
+    },
+    "Appointment": {
+        "NN": 1
+    },
+    "promotion": {
+        "NN": 1
+    },
+    "manager": {
+        "NN": 2
+    },
+    "Publishing_Company": {
+        "NN": 1
+    },
+    "president": {
+        "NN": 3
+    },
+    "company": {
+        "NN": 4
+    },
+    "repair": {
+        "NN": 1
+    },
+    "contracting": {
+        "NN": 1
+    },
+    "track": {
+        "NN": 2
+    },
+    "loss": {
+        "NN": 1
+    },
+    "assistant": {
+        "NN": 1
+    },
+    "district_attorney": {
+        "NN": 1
+    },
+    "District_Attorney": {
+        "NN": 1
+    },
+    "military_service": {
+        "NN": 1
+    },
+    "p.": {
+        "NN": 1
+    },
+    "tomorrow": {
+        "NN": 1
+    },
+    "home": {
+        "NN": 2
+    },
+    "brother": {
+        "NN": 1
+    },
+    "dozen": {
+        "NN": 1
+    },
+    "close": {
+        "NN": 3
+    },
+    "opening": {
+        "NN": 1
+    },
+    "dancing": {
+        "NN": 1
+    },
+    "orchestra": {
+        "NN": 1
+    },
+    "New_Orleans": {
+        "NN": 1
+    },
+    "gayety": {
+        "NN": 1
+    },
+    "Country_Club": {
+        "NN": 1
+    },
+    "reputation": {
+        "NN": 1
+    },
+    "fun": {
+        "NN": 2
+    },
+    "payroll": {
+        "NN": 2
+    },
+    "per_cent": {
+        "NN": 1
+    },
+    "submarine": {
+        "NN": 1
+    },
+    "implication": {
+        "NN": 1
+    },
+    "navy": {
+        "NN": 1
+    },
+    "sub": {
+        "NN": 1
+    },
+    "fleet": {
+        "NN": 1
+    },
+    "spy": {
+        "NN": 1
+    },
+    "ring": {
+        "NN": 1
+    },
+    "secret_service": {
+        "NN": 1
+    },
+    "manslaughter": {
+        "NN": 1
+    },
+    "bludgeon": {
+        "NN": 1
+    },
+    "slaying": {
+        "NN": 1
+    },
+    "verdict": {
+        "NN": 1
+    },
+    "emotion": {
+        "NN": 1
+    },
+    "Board_of_Trustees": {
+        "NN": 1
+    },
+    "race": {
+        "NN": 2
+    },
+    "tax": {
+        "NN": 3
+    },
+    "step": {
+        "NN": 1
+    },
+    "charter": {
+        "NN": 1
+    },
+    "admission": {
+        "NN": 1
+    },
+    "basis": {
+        "NN": 2
+    },
+    "board": {
+        "NN": 3
+    },
+    "chairman": {
+        "NN": 1
+    },
+    "month": {
+        "NN": 4
+    },
+    "row": {
+        "NN": 1
+    },
+    "welfare": {
+        "NN": 1
+    },
+    "commission": {
+        "NN": 1
+    },
+    "category": {
+        "NN": 1
+    },
+    "emergency": {
+        "NN": 1
+    },
+    "allotment": {
+        "NN": 1
+    },
+    "appeals": {
+        "NN": 1
+    },
+    "review": {
+        "NN": 1
+    },
+    "tax_assessments": {
+        "NN": 1
+    },
+    "town_hall": {
+        "NN": 1
+    },
+    "spraying": {
+        "NN": 1
+    },
+    "wisdom": {
+        "NN": 1
+    },
+    "wildlife": {
+        "NN": 1
+    },
+    "investment": {
+        "NN": 3
+    },
+    "community": {
+        "NN": 1
+    },
+    "Foods_stock": {
+        "NN": 1
+    },
+    "public": {
+        "NN": 1
+    },
+    "week": {
+        "NN": 3
+    },
+    "demand": {
+        "NN": 2
+    },
+    "recovery": {
+        "NN": 1
+    },
+    "peak": {
+        "NN": 1
+    },
+    "autumn": {
+        "NN": 3
+    },
+    "economist": {
+        "NN": 1
+    },
+    "Savings_Bank": {
+        "NN": 1
+    },
+    "Investment_Bankers": {
+        "NN": 1
+    },
+    "group": {
+        "NN": 4
+    },
+    "conference": {
+        "NN": 1
+    },
+    "speaker": {
+        "NN": 1
+    },
+    "Palo_Alto": {
+        "NN": 1
+    },
+    "venture_capital": {
+        "NN": 1
+    },
+    "firm": {
+        "NN": 1
+    },
+    "gauntlet": {
+        "NN": 1
+    },
+    "battle": {
+        "NN": 1
+    },
+    "communism": {
+        "NN": 2
+    },
+    "arouny": {
+        "NN": 1
+    },
+    "machinery": {
+        "NN": 1
+    },
+    "dealer": {
+        "NN": 1
+    },
+    "chair": {
+        "NN": 1
+    },
+    "pickup": {
+        "NN": 1
+    },
+    "corn": {
+        "NN": 1
+    },
+    "Labor_Day": {
+        "NN": 1
+    },
+    "star": {
+        "NN": 1
+    },
+    "screen": {
+        "NN": 1
+    },
+    "standard": {
+        "NN": 2
+    },
+    "fashion": {
+        "NN": 3
+    },
+    "profession": {
+        "NN": 1
+    },
+    "winner": {
+        "NN": 2
+    },
+    "personification": {
+        "NN": 1
+    },
+    "cooky": {
+        "NN": 1
+    },
+    "caramel": {
+        "NN": 1
+    },
+    "filling": {
+        "NN": 1
+    },
+    "chocolate": {
+        "NN": 1
+    },
+    "frosting": {
+        "NN": 1
+    },
+    "housewife": {
+        "NN": 1
+    },
+    "engineer": {
+        "NN": 1
+    },
+    "prize": {
+        "NN": 1
+    },
+    "luncheon": {
+        "NN": 1
+    },
+    "bonanza": {
+        "NN": 1
+    },
+    "touch": {
+        "NN": 1
+    },
+    "conductor": {
+        "NN": 1
+    },
+    "conducting": {
+        "NN": 1
+    },
+    "symphony": {
+        "NN": 1
+    },
+    "White_House": {
+        "NN": 2
+    },
+    "furniture": {
+        "NN": 1
+    },
+    "craftsman": {
+        "NN": 1
+    },
+    "lifetime": {
+        "NN": 1
+    },
+    "library": {
+        "NN": 2
+    },
+    "news_conference": {
+        "NN": 1
+    },
+    "biologist": {
+        "NN": 1
+    },
+    "adaptation": {
+        "NN": 1
+    },
+    "case_in_point": {
+        "NN": 1
+    },
+    "equation": {
+        "NN": 1
+    },
+    "restriction": {
+        "NN": 1
+    },
+    "labor_unions": {
+        "NN": 1
+    },
+    "law": {
+        "NN": 1
+    },
+    "everybody": {
+        "NN": 1
+    },
+    "Capitol_Hill": {
+        "NN": 1
+    },
+    "Secretary_of_State": {
+        "NN": 1
+    },
+    "report": {
+        "NN": 4
+    },
+    "golf": {
+        "NN": 1
+    },
+    "tournament": {
+        "NN": 1
+    },
+    "South_African": {
+        "NN": 1
+    },
+    "lap": {
+        "NN": 1
+    },
+    "New_York": {
+        "NN": 6
+    },
+    "home_run": {
+        "NN": 1
+    },
+    "feat": {
+        "NN": 1
+    },
+    "the_sublime": {
+        "NN": 1
+    },
+    "teammate": {
+        "NN": 1
+    },
+    "home_runs": {
+        "NN": 1
+    },
+    "double-header": {
+        "NN": 1
+    },
+    "performance": {
+        "NN": 2
+    },
+    "awe": {
+        "NN": 1
+    },
+    "pal": {
+        "NN": 1
+    },
+    "brother-in-law": {
+        "NN": 1
+    },
+    "entourage": {
+        "NN": 1
+    },
+    "dog": {
+        "NN": 1
+    },
+    "sweater": {
+        "NN": 1
+    },
+    "mission": {
+        "NN": 1
+    },
+    "entertainment": {
+        "NN": 1
+    },
+    "capital": {
+        "NN": 1
+    },
+    "National_Guard": {
+        "NN": 1
+    },
+    "historian": {
+        "NN": 1
+    },
+    "finger": {
+        "NN": 1
+    },
+    "date": {
+        "NN": 1
+    },
+    "disarmament": {
+        "NN": 1
+    },
+    "adviser": {
+        "NN": 1
+    },
+    "enthusiasm": {
+        "NN": 1
+    },
+    "reliance_on": {
+        "NN": 1
+    },
+    "diplomacy": {
+        "NN": 1
+    },
+    "priority": {
+        "NN": 1
+    },
+    "list": {
+        "NN": 1
+    },
+    "question": {
+        "NN": 2
+    },
+    "toll-road": {
+        "NN": 1
+    },
+    "reports": {
+        "NN": 1
+    },
+    "operation": {
+        "NN": 1
+    },
+    "trend": {
+        "NN": 2
+    },
+    "traffic": {
+        "NN": 1
+    },
+    "borrower": {
+        "NN": 1
+    },
+    "taste": {
+        "NN": 1
+    },
+    "fiction": {
+        "NN": 2
+    },
+    "librarian": {
+        "NN": 1
+    },
+    "book": {
+        "NN": 3
+    },
+    "General_Assembly": {
+        "NN": 2
+    },
+    "atmosphere": {
+        "NN": 2
+    },
+    "showdown": {
+        "NN": 1
+    },
+    "conjunction": {
+        "NN": 1
+    },
+    "governor": {
+        "NN": 1
+    },
+    "inference": {
+        "NN": 1
+    },
+    "free_world": {
+        "NN": 1
+    },
+    "dismemberment": {
+        "NN": 1
+    },
+    "figure": {
+        "NN": 2
+    },
+    "plane": {
+        "NN": 1
+    },
+    "crash": {
+        "NN": 1
+    },
+    "shockwave": {
+        "NN": 1
+    },
+    "globe": {
+        "NN": 1
+    },
+    "United_Nations": {
+        "NN": 1
+    },
+    "symbol": {
+        "NN": 2
+    },
+    "moment": {
+        "NN": 1
+    },
+    "Dominican_Republic": {
+        "NN": 1
+    },
+    "government": {
+        "NN": 4
+    },
+    "show": {
+        "NN": 1
+    },
+    "restoration": {
+        "NN": 1
+    },
+    "dictatorship": {
+        "NN": 1
+    },
+    "St._Louis": {
+        "NN": 3
+    },
+    "Construction_Industry": {
+        "NN": 1
+    },
+    "countryside": {
+        "NN": 1
+    },
+    "region": {
+        "NN": 1
+    },
+    "N": {
+        "NN": 1
+    },
+    "problem": {
+        "NN": 4
+    },
+    "successor": {
+        "NN": 1
+    },
+    "institution": {
+        "NN": 1
+    },
+    "cannery": {
+        "NN": 1
+    },
+    "fringe": {
+        "NN": 1
+    },
+    "sadness": {
+        "NN": 1
+    },
+    "writer": {
+        "NN": 2
+    },
+    "ball_club": {
+        "NN": 1
+    },
+    "thinker": {
+        "NN": 1
+    },
+    "baseball": {
+        "NN": 1
+    },
+    "weekend": {
+        "NN": 1
+    },
+    "wraps": {
+        "NN": 1
+    },
+    "model": {
+        "NN": 1
+    },
+    "vehicle": {
+        "NN": 2
+    },
+    "headquarters": {
+        "NN": 1
+    },
+    "party": {
+        "NN": 4
+    },
+    "prisoner": {
+        "NN": 1
+    },
+    "strike": {
+        "NN": 2
+    },
+    "break": {
+        "NN": 1
+    },
+    "parole": {
+        "NN": 1
+    },
+    "melancholy": {
+        "NN": 1
+    },
+    "Homecoming": {
+        "NN": 1
+    },
+    "grad": {
+        "NN": 1
+    },
+    "editorial": {
+        "NN": 2
+    },
+    "Housing_Development": {
+        "NN": 1
+    },
+    "dilemma": {
+        "NN": 2
+    },
+    "solution": {
+        "NN": 1
+    },
+    "endorsement": {
+        "NN": 1
+    },
+    "frustration": {
+        "NN": 1
+    },
+    "exasperation": {
+        "NN": 1
+    },
+    "exhaustion": {
+        "NN": 1
+    },
+    "panic": {
+        "NN": 1
+    },
+    "reference_to": {
+        "NN": 1
+    },
+    "college": {
+        "NN": 1
+    },
+    "Election_Day": {
+        "NN": 1
+    },
+    "legal_holiday": {
+        "NN": 1
+    },
+    "nuclear_weapons": {
+        "NN": 2
+    },
+    "nullity": {
+        "NN": 1
+    },
+    "Soviet_Russia": {
+        "NN": 1
+    },
+    "congestion": {
+        "NN": 1
+    },
+    "center": {
+        "NN": 1
+    },
+    "idol-worship": {
+        "NN": 1
+    },
+    "accompaniment": {
+        "NN": 1
+    },
+    "sacrifice": {
+        "NN": 1
+    },
+    "cult": {
+        "NN": 1
+    },
+    "motor-car": {
+        "NN": 1
+    },
+    "Cold_War": {
+        "NN": 1
+    },
+    "dilemmas": {
+        "NN": 1
+    },
+    "morality": {
+        "NN": 2
+    },
+    "accent": {
+        "NN": 1
+    },
+    "self-delusion": {
+        "NN": 1
+    },
+    "hypocrisy": {
+        "NN": 1
+    },
+    "play": {
+        "NN": 1
+    },
+    "dramatist": {
+        "NN": 1
+    },
+    "idea": {
+        "NN": 1
+    },
+    "imagination": {
+        "NN": 1
+    },
+    "knowledge": {
+        "NN": 1
+    },
+    "craft": {
+        "NN": 1
+    },
+    "someone": {
+        "NN": 1
+    },
+    "Communist_Party": {
+        "NN": 1
+    },
+    "publication": {
+        "NN": 1
+    },
+    "Program": {
+        "NN": 1
+    },
+    "blueprint": {
+        "NN": 1
+    },
+    "transition": {
+        "NN": 1
+    },
+    "apotheosis": {
+        "NN": 1
+    },
+    "regime": {
+        "NN": 1
+    },
+    "consecration": {
+        "NN": 1
+    },
+    "i.": {
+        "NN": 1
+    },
+    "defeat": {
+        "NN": 1
+    },
+    "reform": {
+        "NN": 1
+    },
+    "tenure": {
+        "NN": 1
+    },
+    "Confrontation": {
+        "NN": 1
+    },
+    "face": {
+        "NN": 2
+    },
+    "distress": {
+        "NN": 1
+    },
+    "D": {
+        "NN": 1
+    },
+    "debut": {
+        "NN": 1
+    },
+    "engagement": {
+        "NN": 1
+    },
+    "vitality": {
+        "NN": 1
+    },
+    "William_James": {
+        "NN": 1
+    },
+    "gift": {
+        "NN": 1
+    },
+    "living": {
+        "NN": 1
+    },
+    "account": {
+        "NN": 1
+    },
+    "fall": {
+        "NN": 2
+    },
+    "World_War": {
+        "NN": 1
+    },
+    "piece": {
+        "NN": 1
+    },
+    "scholarship": {
+        "NN": 1
+    },
+    "fund": {
+        "NN": 1
+    },
+    "characterization": {
+        "NN": 1
+    },
+    "grasp": {
+        "NN": 1
+    },
+    "handful": {
+        "NN": 1
+    },
+    "concert": {
+        "NN": 2
+    },
+    "right": {
+        "NN": 3
+    },
+    "dance": {
+        "NN": 1
+    },
+    "premiere": {
+        "NN": 1
+    },
+    "repetition": {
+        "NN": 1
+    },
+    "reader": {
+        "NN": 3
+    },
+    "magic": {
+        "NN": 4
+    },
+    "Ring": {
+        "NN": 1
+    },
+    "chronicle": {
+        "NN": 1
+    },
+    "otter": {
+        "NN": 1
+    },
+    "wit": {
+        "NN": 1
+    },
+    "minority": {
+        "NN": 1
+    },
+    "listener": {
+        "NN": 1
+    },
+    "specialization": {
+        "NN": 1
+    },
+    "tribe": {
+        "NN": 1
+    },
+    "tea_tray": {
+        "NN": 1
+    },
+    "giant": {
+        "NN": 2
+    },
+    "shell": {
+        "NN": 1
+    },
+    "tortoise": {
+        "NN": 1
+    },
+    "theory": {
+        "NN": 1
+    },
+    "pity": {
+        "NN": 1
+    },
+    "demurrer": {
+        "NN": 1
+    },
+    "sweep": {
+        "NN": 1
+    },
+    "coloring": {
+        "NN": 1
+    },
+    "character": {
+        "NN": 1
+    },
+    "novel": {
+        "NN": 1
+    },
+    "nobleman": {
+        "NN": 1
+    },
+    "automobile_race": {
+        "NN": 1
+    },
+    "intention": {
+        "NN": 1
+    },
+    "failure": {
+        "NN": 1
+    },
+    "reading": {
+        "NN": 2
+    },
+    "skindiving": {
+        "NN": 1
+    },
+    "Department_of_Agriculture": {
+        "NN": 1
+    },
+    "food": {
+        "NN": 2
+    },
+    "consumption": {
+        "NN": 1
+    },
+    "encouragement": {
+        "NN": 1
+    },
+    "fraternity": {
+        "NN": 1
+    },
+    "clergy": {
+        "NN": 1
+    },
+    "club": {
+        "NN": 1
+    },
+    "uncertainty": {
+        "NN": 1
+    },
+    "Truth": {
+        "NN": 1
+    },
+    "shadow": {
+        "NN": 2
+    },
+    "lot": {
+        "NN": 1
+    },
+    "salvation": {
+        "NN": 1
+    },
+    "strength": {
+        "NN": 1
+    },
+    "quarter": {
+        "NN": 2
+    },
+    "scholar": {
+        "NN": 1
+    },
+    "ibn": {
+        "NN": 1
+    },
+    "square": {
+        "NN": 3
+    },
+    "uniformity": {
+        "NN": 1
+    },
+    "termination": {
+        "NN": 1
+    },
+    "human_race": {
+        "NN": 1
+    },
+    "human_action": {
+        "NN": 1
+    },
+    "calculation": {
+        "NN": 1
+    },
+    "precision": {
+        "NN": 1
+    },
+    "subject": {
+        "NN": 1
+    },
+    "housing": {
+        "NN": 1
+    },
+    "social_status": {
+        "NN": 1
+    },
+    "belonging": {
+        "NN": 1
+    },
+    "acceptance": {
+        "NN": 1
+    },
+    "identification": {
+        "NN": 1
+    },
+    "pride": {
+        "NN": 2
+    },
+    "hopes": {
+        "NN": 1
+    },
+    "well-being": {
+        "NN": 1
+    },
+    "discrimination": {
+        "NN": 1
+    },
+    "residence": {
+        "NN": 1
+    },
+    "universe": {
+        "NN": 2
+    },
+    "atom": {
+        "NN": 1
+    },
+    "mandate": {
+        "NN": 1
+    },
+    "indulgence": {
+        "NN": 1
+    },
+    "Faithful": {
+        "NN": 1
+    },
+    "anniversary": {
+        "NN": 2
+    },
+    "rocket_engines": {
+        "NN": 1
+    },
+    "Dog_Show": {
+        "NN": 1
+    },
+    "Junior_Class": {
+        "NN": 1
+    },
+    "concern": {
+        "NN": 1
+    },
+    "Today": {
+        "NN": 1
+    },
+    "boating": {
+        "NN": 1
+    },
+    "scene": {
+        "NN": 1
+    },
+    "sport": {
+        "NN": 2
+    },
+    "frame": {
+        "NN": 2
+    },
+    "puzzle": {
+        "NN": 1
+    },
+    "signal": {
+        "NN": 1
+    },
+    "operator": {
+        "NN": 1
+    },
+    "math": {
+        "NN": 1
+    },
+    "go": {
+        "NN": 1
+    },
+    "round": {
+        "NN": 2
+    },
+    "pacing": {
+        "NN": 1
+    },
+    "mile": {
+        "NN": 1
+    },
+    "gun": {
+        "NN": 2
+    },
+    "survey": {
+        "NN": 1
+    },
+    "lookout": {
+        "NN": 1
+    },
+    "hunter": {
+        "NN": 1
+    },
+    "shooter": {
+        "NN": 1
+    },
+    "Livery_Stable": {
+        "NN": 1
+    },
+    "Coaching": {
+        "NN": 1
+    },
+    "sign": {
+        "NN": 1
+    },
+    "patronage": {
+        "NN": 1
+    },
+    "horsedom": {
+        "NN": 1
+    },
+    "width": {
+        "NN": 1
+    },
+    "textbook": {
+        "NN": 1
+    },
+    "description": {
+        "NN": 1
+    },
+    "miracle": {
+        "NN": 1
+    },
+    "charm": {
+        "NN": 1
+    },
+    "splendor": {
+        "NN": 1
+    },
+    "contrast": {
+        "NN": 2
+    },
+    "ordinary": {
+        "NN": 1
+    },
+    "tourist": {
+        "NN": 1
+    },
+    "ugliness": {
+        "NN": 1
+    },
+    "barbecue": {
+        "NN": 1
+    },
+    "grease": {
+        "NN": 1
+    },
+    "pottery": {
+        "NN": 1
+    },
+    "clay": {
+        "NN": 1
+    },
+    "foot": {
+        "NN": 1
+    },
+    "boat": {
+        "NN": 1
+    },
+    "cockpit": {
+        "NN": 2
+    },
+    "helmsman": {
+        "NN": 1
+    },
+    "vacation": {
+        "NN": 1
+    },
+    "scale": {
+        "NN": 2
+    },
+    "house": {
+        "NN": 3
+    },
+    "retreat": {
+        "NN": 1
+    },
+    "bridges": {
+        "NN": 1
+    },
+    "swimming_pool": {
+        "NN": 1
+    },
+    "dash": {
+        "NN": 1
+    },
+    "hydrochemistry": {
+        "NN": 1
+    },
+    "plumbing": {
+        "NN": 1
+    },
+    "pump-priming": {
+        "NN": 1
+    },
+    "latitude": {
+        "NN": 1
+    },
+    "conditioning": {
+        "NN": 1
+    },
+    "romance": {
+        "NN": 1
+    },
+    "movie": {
+        "NN": 1
+    },
+    "boy-meets-girl": {
+        "NN": 1
+    },
+    "saga": {
+        "NN": 1
+    },
+    "freighter": {
+        "NN": 1
+    },
+    "Air_Force": {
+        "NN": 1
+    },
+    "Field_Marshal": {
+        "NN": 1
+    },
+    "calf": {
+        "NN": 1
+    },
+    "boot": {
+        "NN": 1
+    },
+    "student": {
+        "NN": 1
+    },
+    "biplane": {
+        "NN": 1
+    },
+    "blast": {
+        "NN": 1
+    },
+    "silver": {
+        "NN": 1
+    },
+    "engine": {
+        "NN": 1
+    },
+    "roar": {
+        "NN": 1
+    },
+    "pilot": {
+        "NN": 1
+    },
+    "talk": {
+        "NN": 1
+    },
+    "experimentation": {
+        "NN": 1
+    },
+    "anxiety": {
+        "NN": 1
+    },
+    "family_doctors": {
+        "NN": 1
+    },
+    "ignorance": {
+        "NN": 1
+    },
+    "cafe": {
+        "NN": 1
+    },
+    "security": {
+        "NN": 1
+    },
+    "nation-state": {
+        "NN": 1
+    },
+    "certainty": {
+        "NN": 1
+    },
+    "mishap": {
+        "NN": 1
+    },
+    "destruction": {
+        "NN": 1
+    },
+    "posture": {
+        "NN": 1
+    },
+    "game": {
+        "NN": 1
+    },
+    "statuary": {
+        "NN": 1
+    },
+    "tile": {
+        "NN": 1
+    },
+    "carpet": {
+        "NN": 1
+    },
+    "reign": {
+        "NN": 1
+    },
+    "Flying_Dutchman": {
+        "NN": 1
+    },
+    "music_director": {
+        "NN": 1
+    },
+    "Symphony_Orchestra": {
+        "NN": 1
+    },
+    "musical_organization": {
+        "NN": 1
+    },
+    "test": {
+        "NN": 2
+    },
+    "message": {
+        "NN": 1
+    },
+    "cotton": {
+        "NN": 1
+    },
+    "crop": {
+        "NN": 1
+    },
+    "urbanization": {
+        "NN": 2
+    },
+    "bulk": {
+        "NN": 2
+    },
+    "choreographer": {
+        "NN": 1
+    },
+    "theatre": {
+        "NN": 1
+    },
+    "self-sufficiency": {
+        "NN": 1
+    },
+    "cyclorama": {
+        "NN": 1
+    },
+    "setting": {
+        "NN": 1
+    },
+    "agreement": {
+        "NN": 1
+    },
+    "sovereignty": {
+        "NN": 1
+    },
+    "dispute": {
+        "NN": 1
+    },
+    "calibre": {
+        "NN": 1
+    },
+    "nobility": {
+        "NN": 1
+    },
+    "sex": {
+        "NN": 1
+    },
+    "backbone": {
+        "NN": 1
+    },
+    "search": {
+        "NN": 1
+    },
+    "dimension": {
+        "NN": 1
+    },
+    "programing": {
+        "NN": 2
+    },
+    "mankind": {
+        "NN": 1
+    },
+    "practice": {
+        "NN": 1
+    },
+    "existence": {
+        "NN": 1
+    },
+    "taxation": {
+        "NN": 1
+    },
+    "state_government": {
+        "NN": 1
+    },
+    "property_tax": {
+        "NN": 1
+    },
+    "Rhode_Island": {
+        "NN": 4
+    },
+    "square_feet": {
+        "NN": 1
+    },
+    "scope": {
+        "NN": 1
+    },
+    "regard_to": {
+        "NN": 1
+    },
+    "theme": {
+        "NN": 1
+    },
+    "republic": {
+        "NN": 1
+    },
+    "New_World": {
+        "NN": 1
+    },
+    "pathology": {
+        "NN": 1
+    },
+    "series": {
+        "NN": 1
+    },
+    "complex_numbers": {
+        "NN": 1
+    },
+    "transformation": {
+        "NN": 1
+    },
+    "quadric": {
+        "NN": 1
+    },
+    "income": {
+        "NN": 1
+    },
+    "denial": {
+        "NN": 1
+    },
+    "lack": {
+        "NN": 1
+    },
+    "Tension": {
+        "NN": 1
+    },
+    "management": {
+        "NN": 2
+    },
+    "communication": {
+        "NN": 1
+    },
+    "sentiment": {
+        "NN": 2
+    },
+    "functioning": {
+        "NN": 1
+    },
+    "tension": {
+        "NN": 1
+    },
+    "mating": {
+        "NN": 1
+    },
+    "decree": {
+        "NN": 1
+    },
+    "registration": {
+        "NN": 1
+    },
+    "adult_males": {
+        "NN": 1
+    },
+    "semester": {
+        "NN": 1
+    },
+    "class": {
+        "NN": 1
+    },
+    "structuring": {
+        "NN": 1
+    },
+    "hesitancy": {
+        "NN": 1
+    },
+    "bus": {
+        "NN": 1
+    },
+    "nurse": {
+        "NN": 1
+    },
+    "once-over": {
+        "NN": 1
+    },
+    "license_number": {
+        "NN": 1
+    },
+    "stall": {
+        "NN": 1
+    },
+    "corner": {
+        "NN": 1
+    },
+    "beard": {
+        "NN": 1
+    },
+    "telephone": {
+        "NN": 1
+    },
+    "bedroom": {
+        "NN": 1
+    },
+    "phone": {
+        "NN": 1
+    },
+    "call": {
+        "NN": 1
+    },
+    "hotel_room": {
+        "NN": 1
+    },
+    "maid": {
+        "NN": 1
+    },
+    "chain": {
+        "NN": 1
+    },
+    "premise": {
+        "NN": 1
+    },
+    "computer": {
+        "NN": 1
+    },
+    "elbow": {
+        "NN": 1
+    },
+    "paw": {
+        "NN": 1
+    },
+    "cabin": {
+        "NN": 1
+    },
+    "sentry": {
+        "NN": 1
+    },
+    "village": {
+        "NN": 1
+    },
+    "state_of_mind": {
+        "NN": 1
+    },
+    "cap": {
+        "NN": 1
+    },
+    "preoccupation": {
+        "NN": 1
+    },
+    "kitten": {
+        "NN": 1
+    },
+    "arm": {
+        "NN": 1
+    },
+    "whistle": {
+        "NN": 1
+    },
+    "station_wagon": {
+        "NN": 1
+    },
+    "baby": {
+        "NN": 1
+    },
+    "fatigue": {
+        "NN": 1
+    },
+    "earnest": {
+        "NN": 1
+    },
+    "absolution": {
+        "NN": 1
+    },
+    "last": {
+        "NN": 1
+    },
+    "testament": {
+        "NN": 1
+    },
+    "proof": {
+        "NN": 1
+    },
+    "northeast": {
+        "NN": 1
+    },
+    "strain": {
+        "NN": 1
+    },
+    "spare_time": {
+        "NN": 1
+    },
+    "excursion": {
+        "NN": 1
+    },
+    "road": {
+        "NN": 1
+    },
+    "dawn": {
+        "NN": 1
+    },
+    "dusk": {
+        "NN": 1
+    },
+    "trash": {
+        "NN": 1
+    },
+    "roadway": {
+        "NN": 1
+    },
+    "photograph": {
+        "NN": 1
+    },
+    "agony": {
+        "NN": 1
+    },
+    "dish": {
+        "NN": 1
+    },
+    "pile": {
+        "NN": 1
+    },
+    "intrusion": {
+        "NN": 1
+    },
+    "free_enterprise": {
+        "NN": 1
+    }
+}

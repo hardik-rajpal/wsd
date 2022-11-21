@@ -36,4 +36,4 @@ for j in range(len(corpus._fileids)):
     print(f'Done: ',round(100*j/len(corpus._fileids),2))
 fname = 'tagsemsents'
 with open(f'data/{fname}.txt','w+') as f:
-    f.write(json.dumps(globsents))
+    f.write(json.dumps(globsents,indent=4))
