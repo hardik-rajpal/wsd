@@ -34,6 +34,7 @@ for j in range(len(corpus._fileids)):
         sents[i] = new_sent
     globsents.extend(sents)
     print(f'Done: ',round(100*j/len(corpus._fileids),2))
+    if(round(100*j/len(corpus._fileids),2)>3):break
 fname = 'tagsemsents'
 with open(f'data/{fname}.txt','w+') as f:
     f.write(json.dumps(globsents,indent=4))
