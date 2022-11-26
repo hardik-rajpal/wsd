@@ -38,10 +38,12 @@ class WSD:
         }
         self.specialChar = re.compile("[!@#$%^&*()[]{};:,./<>?\|`~-=_+]")
         
-    def __init__(self):
+    def __init__(self,demo=False):
         self.corpus = brown
         self.setupTagger(self.corpus.tagged_sents(tagset="universal"))
         self.trainWord2Vec(self.corpus)
+        if(demo):
+            self.setupSenseFreqTable(self.loadSentsFromCorpus())
         self.unksense = 'None'
     def stopWordsFilter(self,seq:List[str]):
         return list(filter(lambda x:not self.stopwords.__contains__(x),seq))
@@ -143,7 +145,7 @@ class WSD:
         for j in range(len(seq)):
             wordtuple = seq[j]
             #TODO: change wordtuple length
-            if (wordtuple[1]==nountag):
+            if (wordtuple[1]==nountag or wordtuple[1]=='VERB'):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
 
@@ -279,7 +281,7 @@ class WSD:
         self.sensedict = {}
         for sent in sents:
             for wordtagsent in sent:
-                if(wordtagsent[1]==nountag):
+                if(wordtagsent[1]==nountag and len(wordtagsent)==3):
                     word,_,syn = wordtagsent
                     if(word in self.sensedict):
                         if(syn in self.sensedict[word]):

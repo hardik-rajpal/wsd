@@ -10,7 +10,7 @@ class Request(BaseModel):
     algorithm:str#wfs|mfs|elesk|pr
 
 app = FastAPI()
-w = WSD()
+w = WSD(True)
 
 @app.post("/senses/")
 async def create_item(req:Request):
