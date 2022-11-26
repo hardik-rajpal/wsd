@@ -116,7 +116,7 @@ class WSD:
         sent_senses = []
         for j in range(len(sent)):
             wordtuple = sent[j]
-            if(wordtuple[1]==nountag and len(wordtuple)==3):
+            if(wordtuple[1]==nountag):
                 sense = func(wordtuple[:2],seq)
                 sent_senses.append([j,sense])
         return sent_senses
@@ -143,7 +143,7 @@ class WSD:
         for j in range(len(seq)):
             wordtuple = seq[j]
             #TODO: change wordtuple length
-            if (len(wordtuple) == 3 and wordtuple[1]==nountag):
+            if (wordtuple[1]==nountag):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
 
@@ -219,7 +219,7 @@ class WSD:
         return answer
     def tokenize(self,seq:str):
         return nltk.word_tokenize(seq)
-    def attachSensesTo(self,sent:str,useLesk=True):
+    def attachSensesTo(self,sent:str,algo):
         sent = sent.lower()
         tkns = self.tokenize(sent)
         tagged_tkns = self.tagger.tag(tkns)
@@ -227,17 +227,40 @@ class WSD:
         for i in range(len(tagged_tkns)):
             tagged_tkns[i] = list(tagged_tkns[i])
             tagged_tkns[i][0] = lemmatkns[i]
-        ctxwordsLemmas = self.stopWordsFilter(lemmatkns)
         senses = []
         defdict = {}
-        for tgtkn in tagged_tkns:
+        if(algo=='wfs'):
+            senses = self.wfs(tagged_tkns)
+        elif(algo=='mfs'):
+            senses = self.mfs(tagged_tkns)
+        elif(algo=='elesk'):
+            senses = self.simplifiedLeskOnSent(tagged_tkns)
+        elif(algo=='pr'):
+            senses = self.pageRank(tagged_tkns)
+        else:
+            return None
+        j = 0
+        # print(senses)
+        for i,tgtkn in enumerate(tagged_tkns):
             if(tgtkn[1]==nountag):
-                if(useLesk):
-                    bestSense = self.simplifiedLesk(tgtkn,ctxwordsLemmas)
-                else:
-                    bestSense = self.pageRank(tgtkn,ctxwordsLemmas)
-                senses.append(bestSense)
-                defdict[tgtkn[0]] = bestSense
+                defdict[tgtkn[0]+'@'+str(i)] = senses[j][1]
+                j+=1
+        return defdict
+    def expandSenseDict(self,defdict):
+        for key in defdict.keys():
+            if(defdict[key]!=self.unksense):
+                synset:Synset = wordnet.synset(defdict[key])
+                defdict[key] = {
+                    'synset':synset.name(),
+                    'def':synset.definition(),
+                    'examples':synset.examples(),   
+                }
+            else:
+                defdict[key] = {
+                    'synset':'unknown',
+                    'def':'unclear',
+                    'examples':'unspeakable'
+                }
         return defdict
     def smallwfs(self, wordtag):
         senses = wordnet.synsets(wordtag[0],self.lemmaPOS[wordtag[1]])
@@ -248,7 +271,7 @@ class WSD:
         sent_senses = []
         for j in range(len(sent)):
             wordtuple = sent[j]
-            if(wordtuple[1]==nountag and len(wordtuple)==3):
+            if(wordtuple[1]==nountag):
                 sense = self.smallwfs(wordtuple[:2])
                 sent_senses.append([j,sense])
         return sent_senses
@@ -256,7 +279,7 @@ class WSD:
         self.sensedict = {}
         for sent in sents:
             for wordtagsent in sent:
-                if(wordtagsent[1]==nountag and len(wordtagsent)==3):
+                if(wordtagsent[1]==nountag):
                     word,_,syn = wordtagsent
                     if(word in self.sensedict):
                         if(syn in self.sensedict[word]):
@@ -279,7 +302,7 @@ class WSD:
         sent_senses = []
         for j in range(len(sent)):
             wordtuple = sent[j]
-            if(wordtuple[1]==nountag and len(wordtuple)==3):
+            if(wordtuple[1]==nountag):
                 sense = smallmfs(wordtuple[:2])
                 sent_senses.append([j,sense])
         return sent_senses

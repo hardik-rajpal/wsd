@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script>
+            function displayData(senses){
+                for(let word of Object.keys(senses)){
+                    console.log(senses[word])
+                    //replace console.log with code to update html elements.
+                }
+            }
+            function getSenses(){
+                //change the two vars being set below.
+                let sent = document.getElementById('sent').value.split(' ').join('_')
+                console.log(document.getElementById('sent'))
+                let algo = 'wfs'
+                let data = {
+                    sentence:sent,
+                    algorithm:algo
+                }
+                const options = {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    cahce:'no-cache',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'crossorigin':true
+                      },
+                    redirect:'follow',
+                    referrerPolicy:'no-referrer',
+                    body:JSON.stringify(data)
+                  };
+                const url = 'http://127.0.0.1:8000/senses/'
+                
+                axios.post(url,data).then((ans)=>{
+                    displayData(ans.data)
+                })
+                //fetch(url, options).then(ans=>{
+                  //  console.log(ans)
+                //})
+            }
+        </script>
+        <script>
+            setTimeout(()=>getSenses(),3000)
+        </script>
+    </head>
+    <body>
+        <input id="sent" placeholder="Enter a sentence here..." value="the boy loves me"/>
+        <input id="algo" placeholder="Enter one of wfs, mfs, elesk or pr" value="wfs"/>
+        <button onclick="getSenses()">Submit</button>
+    </body>
+</html>

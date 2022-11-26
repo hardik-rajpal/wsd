@@ -5,9 +5,14 @@ from wsd import WSD
 wordnet:WordNetCorpusReader
 meanings = wordnet.synsets('gay')
 name,pos,num = meanings[0].name().split('.')
-pos = 'NOUN'
+pos = 'n'
 print(f'{name}.{pos}.{num}')
-print(Synset(f'{name}.{pos}.{int(num)}'))
+str1 = f'{name}.{pos}.{num}'
+s:Synset = wordnet.synset(str1)
+print(s)
+print(s.definition())
+
+
 #Input: A sentence of paragraph
 #Output: Sentence/paragraph, with the NOUNS tagged with their senses from wordnet.
 #Processing steps:
