@@ -21,7 +21,7 @@ OVERLAPMS = [
     'mean.dot',
     'matmul.thres.count',
 ]
-OVERLAP_METHOD = 3
+OVERLAP_METHOD = 2
 semtagwordsep = '**'
 nountag = 'NOUN'
 
@@ -89,15 +89,14 @@ class WSD:
 
     def getSignature(self, sense: Synset):
         wdef: str = sense.definition()
-        # wex: List[str] = sense.examples()
+        words = []
         while (re.match(self.specialChar, wdef) != None):
             wdef = re.sub(self.specialChar, " ", wdef)
         words = wdef.split()
-        # words.extend(sense.lemma_names())
-        for hn in sense.hypernyms():
+        sense.entailments()
+        words.extend(sense.lemma_names())
+        for hn in [*sense.hypernyms(),*sense.entailments()]:
             words.extend(hn.lemma_names())
-        # for ex in wex:
-        #     words.extend(ex.split())
         words = self.stopWordsFilter(words)
         return self.getWordVecMatrix(words)
 
@@ -121,14 +120,13 @@ class WSD:
         elif (method == 1):
             signatvect = np.mean(signatMat, axis=0)
             ctxvect = np.mean(contextMat, axis=0)
-            res = np.dot(signatvect, ctxvect) / \
-                (np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
+            res = np.dot(signatvect, ctxvect) /(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             res = np.abs(res)
         elif (method == 2):
             signatvect = np.sum(signatMat, axis=0)
             ctxvect = np.sum(contextMat, axis=0)
             res = np.dot(signatvect, ctxvect)/(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
-            res = np.abs(res)
+            # res = np.abs(res)
         elif (method == 3):
             thres = 0.8
             matprod = np.matmul(signatMat, (contextMat.T))
@@ -176,7 +174,6 @@ class WSD:
 
         for j in range(len(seq)):
             wordtuple = seq[j]
-            #TODO: change wordtuple length
             if ((wordtuple[1]==nountag or wordtuple[1]=='VERB')):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
@@ -215,7 +212,7 @@ class WSD:
                         signat2 = self.getSignature(senses[i+1][k])
                     if (len(signat2.shape) == 1):
                         signat2 = signat2.reshape((1, -1))
-                    overlap = self.computeOverlap(signat1, signat2)
+                    overlap = self.computeOverlap(signat1, signat2,OVERLAP_METHOD)
                     node_wts.append(overlap)
                 if (type(senses[i][j]) != str):
                     senses[i][j] = senses[i][j].name()
@@ -364,9 +361,9 @@ class WSD:
         print()
 
     def testOnCorpus(self):
-        print('Lesk accuracies: ',end='')
-        self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
-        print()
+        # print('Lesk accuracies: ',end='')
+        # self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
+        # print()
         print('Page Rank accuracies: ', end='')
         self.kfoldeval(lambda x: x, self.pageRank)
         print()
