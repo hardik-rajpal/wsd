@@ -89,12 +89,15 @@ class WSD:
 
     def getSignature(self, sense: Synset):
         wdef: str = sense.definition()
-        wex: List[str] = sense.examples()
+        # wex: List[str] = sense.examples()
         while (re.match(self.specialChar, wdef) != None):
             wdef = re.sub(self.specialChar, " ", wdef)
         words = wdef.split()
-        for ex in wex:
-            words.extend(ex.split())
+        # words.extend(sense.lemma_names())
+        for hn in sense.hypernyms():
+            words.extend(hn.lemma_names())
+        # for ex in wex:
+        #     words.extend(ex.split())
         words = self.stopWordsFilter(words)
         return self.getWordVecMatrix(words)
 
@@ -122,8 +125,8 @@ class WSD:
                 (np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             res = np.abs(res)
         elif (method == 2):
-            signatvect = np.mean(signatMat, axis=0)
-            ctxvect = np.mean(contextMat, axis=0)
+            signatvect = np.sum(signatMat, axis=0)
+            ctxvect = np.sum(contextMat, axis=0)
             res = np.dot(signatvect, ctxvect)/(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             res = np.abs(res)
         elif (method == 3):
@@ -139,7 +142,7 @@ class WSD:
 
     def simplifiedLeskOnSent(self, sent: List[Tuple[str]]):
         func = self.simplifiedLesk
-        seq = list(map(lambda x: x[0].lower(), sent))
+        seq = list(map(lambda x: x[0], sent))
         sent_senses = []
         for j in range(len(sent)):
             wordtuple = sent[j]
@@ -388,6 +391,7 @@ class WSD:
             # no training in lesk?
             trainsents = sents[:i*step]+sents[i*step+step:]
             testsents = sents[i*step:i*step+step]
+            # testsents = sents
             trainfunc(trainsents)
             self.applyMethodOnCorpus(func, testsents)
 
@@ -406,11 +410,12 @@ class WSD:
             sensesent = senses[i]
             realsent = sents[i]
             for ind, sense in sensesent:
-                numtests += 1
-                if (realsent[ind][-1] == sense):
-                    accuracy += 1
-                else:
-                    failures.append([realsent, sense, ])
+                if(len(realsent[ind])==3 and realsent[ind][1]==nountag):
+                    numtests += 1
+                    if (realsent[ind][-1] == sense):
+                        accuracy += 1
+                    else:
+                        failures.append([realsent, sense, ])
         accuracy = round(100*accuracy/numtests, 2)
         print(accuracy, end=' ')
 
