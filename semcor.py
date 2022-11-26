@@ -30,19 +30,16 @@ for j in range(len(corpus._fileids)):
                 labels.append(subtree.label())
             labels.append('_'.join(subtree.leaves()))
             # print(labels)
-
-            if (None in labels):
-                continue
-            if (nountag in labels):
-                new_sent.append(semtagwordsep.join(
-                    [labels[-1], mapping[nountag], labels[0]]))
+            if(None in labels):continue
+            if(nountag in labels and len(labels)>=3):
+                new_sent.append(semtagwordsep.join([labels[-1],mapping[nountag],labels[0]]))
             else:
                 new_sent.append(semtagwordsep.join(
                     [labels[-1], mapping[labels[-2]]]))
         sents[i] = new_sent
     globsents.extend(sents)
-    print(f'Done: ', round(100*j/len(corpus._fileids), 2))
-
+    print(f'Done: ',round(100*j/len(corpus._fileids),2))
+    # if(round(100*j/len(corpus._fileids),2)>20):break
 fname = 'tagsemsents'
-with open(f'data/{fname}.txt', 'w+') as f:
-    f.write(json.dumps(globsents))
+with open(f'data/{fname}.txt','w+') as f:
+    f.write(json.dumps(globsents,indent=4))

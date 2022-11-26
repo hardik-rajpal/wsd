@@ -8,11 +8,19 @@ from nltk.stem import WordNetLemmatizer
 import json
 import nltk
 import re
+import pickle as pkl
 import numpy as np
 from gensim.models import Word2Vec
 from typing import List, Tuple
 
 W2VLEN = 10
+OVERLAPMS = [
+    'matmul',
+    'mean.cos',
+    'mean.dot',
+    'matmul.thres.count',
+]
+OVERLAP_METHOD = 3
 semtagwordsep = '**'
 nountag = 'NOUN'
 
@@ -78,27 +86,59 @@ class WSD:
         words = self.stopWordsFilter(words)
         return self.getWordVecMatrix(words)
 
-    def computeOverlap(self, signatMat: np.ndarray, contextMat: np.ndarray):
+    def computeOverlap(self, signatMat: np.ndarray, contextMat: np.ndarray, method=0):
         """
         Tune this to one of:
         1. a.b
         2. a.b/|a||b|
         3. (a-b)^d
         """
-        thres = 0.1
-        matprod = np.matmul(signatMat, (contextMat.T))
-        sgnorm = np.linalg.norm(signatMat, axis=1).reshape((-1, 1))
-        ctxnorm = np.linalg.norm(contextMat, axis=1).reshape((1, -1))
-        normmat = sgnorm*ctxnorm
-        matprod = np.abs(matprod)/normmat
+        res = None
+        # print(signatMat.shape,contextMat.shape)
+        if (method == 0):
+            thres = 0.1
+            matprod = np.matmul(signatMat, (contextMat.T))
+            sgnorm = np.linalg.norm(signatMat, axis=1).reshape((-1, 1))
+            ctxnorm = np.linalg.norm(contextMat, axis=1).reshape((1, -1))
+            normmat = sgnorm*ctxnorm
+            matprod = np.abs(matprod)/normmat
+            res = np.mean(matprod[matprod > thres])
+        elif (method == 1):
+            signatvect = np.mean(signatMat, axis=0)
+            ctxvect = np.mean(contextMat, axis=0)
+            res = np.dot(signatvect, ctxvect) / \
+                (np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
+            res = np.abs(res)
+        elif (method == 2):
+            signatvect = np.mean(signatMat, axis=0)
+            ctxvect = np.mean(contextMat, axis=0)
+            res = np.dot(signatvect, ctxvect)
+            res = np.abs(res)
+        elif (method == 3):
+            thres = 0.8
+            matprod = np.matmul(signatMat, (contextMat.T))
+            sgnorm = np.linalg.norm(signatMat, axis=1).reshape((-1, 1))
+            ctxnorm = np.linalg.norm(contextMat, axis=1).reshape((1, -1))
+            normmat = sgnorm*ctxnorm
+            matprod = np.abs(matprod)/normmat
+            res = np.count_nonzero(matprod > thres)
         # print(matprod)
-        return np.mean(matprod[matprod > thres])
+        return res
+
+    def simplifiedLeskOnSent(self, sent: List[Tuple[str]]):
+        func = self.simplifiedLesk
+        seq = list(map(lambda x: x[0].lower(), sent))
+        sent_senses = []
+        for j in range(len(sent)):
+            wordtuple = sent[j]
+            if (wordtuple[1] == nountag and len(wordtuple) == 3):
+                sense = func(wordtuple[:2], seq)
+                sent_senses.append([j, sense])
+        return sent_senses
 
     def simplifiedLesk(self, wordtag: Tuple[str], seq: List[str]):
-
         senses: List[Synset] = wordnet.synsets(
             wordtag[0], self.lemmaPOS[wordtag[1]])
-
         if (len(senses) == 0):
             return self.unksense
         bestSense = senses[0]
@@ -108,25 +148,20 @@ class WSD:
         contxt = self.getWordVecMatrix(seq)
         for sense in senses:
             signat = self.getSignature(sense)
-            overlap = self.computeOverlap(signat, contxt)
+            overlap = self.computeOverlap(signat, contxt, OVERLAP_METHOD)
             if overlap > maxoverlap:
                 maxoverlap = overlap
                 bestSense = sense
         return bestSense.name()
 
-    def overlapTestMat(self):
-        a = self.getWordVecMatrix(
-            ['boy', 'man', 'lion', 'jungle', 'forest', 'hunt'])
-        print(self.computeOverlap(a, a))
-
-    def pageRank(self, seq: List[str], d=0.8):
-
+    def pageRank(self, seq: List[Tuple[str]], d=0.8):
         ambg_word_tuple = []  # (word, tag)
         indices = []
         # print(seq)
         for j in range(len(seq)):
             wordtuple = seq[j]
-            if (len(wordtuple) == 3):
+            # TODO: change wordtuple length
+            if (len(wordtuple) == 3 and wordtuple[1] == nountag):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
 
@@ -135,11 +170,19 @@ class WSD:
 
         senses = []
         for tup in ambg_word_tuple:
-            senses.append(wordnet.synsets(tup[0], self.lemmaPOS[tup[1]]))
-
+            senses.append(
+                # list(map(
+                # lambda x: x.name() ,
+                (wordnet.synsets(tup[0], self.lemmaPOS[tup[1]]))
+                # )
+                # )
+            )
+            if (len(senses[-1]) == 0):
+                senses[-1] = [self.unksense]
         scores = []
         for i in range(len(senses)):
-            scores.append([1/len(senses[i])]*len(senses[i]))
+            l = len(senses[i])
+            scores.append([1/(l)]*l)
 
         edge_wts = []
         for i in range(len(senses) - 1):
@@ -147,13 +190,31 @@ class WSD:
             for j in range(len(senses[i])):
                 node_wts = []
                 for k in range(len(senses[i+1])):
-                    signat1 = self.getSignature(senses[i][j])
-                    signat2 = self.getSignature(senses[i+1][k])
+                    if (type(senses[i][j]) == str):
+                        signat1 = self.unknownwordvect
+                    else:
+                        signat1 = self.getSignature(senses[i][j])
+                    if (len(signat1.shape) == 1):
+                        signat1 = signat1.reshape((1, -1))
+                    if (type(senses[i+1][k]) == str):
+                        signat2 = self.unknownwordvect
+                    else:
+                        signat2 = self.getSignature(senses[i+1][k])
+                    if (len(signat2.shape) == 1):
+                        signat2 = signat2.reshape((1, -1))
                     overlap = self.computeOverlap(signat1, signat2)
                     node_wts.append(overlap)
-                layer_wts.append(node_wts)
-            edge_wts.append(layer_wts)
+                if (type(senses[i][j]) != str):
+                    senses[i][j] = senses[i][j].name()
 
+                layer_wts.append(node_wts)
+            # print('Printing sense[i]',senses[i])
+            edge_wts.append(layer_wts)
+        # if(len(senses)>2):
+        #     exit()
+        for j in range(len(senses[-1])):
+            if (type(senses[-1][j]) != str):
+                senses[-1][j] = senses[-1][j].name()
         for i in range(1, len(senses)):
             for j in range(len(senses[i])):
                 score = 0
@@ -161,24 +222,24 @@ class WSD:
                     score += edge_wts[i-1][k][j] / \
                         (sum(edge_wts[i-1][k])) * scores[i-1][k]
                 scores[i][j] = (1-d) * scores[i][j] + d * score
-        
-        for i in range(len(senses)):
-            for j in range(len(senses[i])):
-                print(senses[i][j].name(), scores[i][j])
-            print()
+
+        # for i in range(len(senses)):
+        #     for j in range(len(senses[i])):
+        #         print(senses[i][j], scores[i][j])
+        #     print()
 
         answer = []
         for i in range(len(senses)):
             if ambg_word_tuple[i][1] == nountag:
                 argm = np.argmax(np.asarray(scores[i]))
-                answer.append([indices[i], senses[i][argm].name()])
+                answer.append([indices[i], senses[i][argm]])
 
         return answer
 
     def tokenize(self, seq: str):
         return nltk.word_tokenize(seq)
 
-    def     attachSensesTo(self, sent: str, useLesk=True):
+    def attachSensesTo(self, sent: str, useLesk=True):
         sent = sent.lower()
         tkns = self.tokenize(sent)
         tagged_tkns = self.tagger.tag(tkns)
@@ -194,7 +255,7 @@ class WSD:
         defdict = {}
 
         for tgtkn in tagged_tkns:
-            if (tgtkn[1] == 'NOUN'):
+            if (tgtkn[1] == nountag):
                 if (useLesk):
                     bestSense = self.simplifiedLesk(tgtkn, ctxwordsLemmas)
                 else:
@@ -205,7 +266,71 @@ class WSD:
 
         return defdict
 
-    def testOnCorpus(self, useLesk=False):
+    def smallwfs(self, wordtag):
+        senses = wordnet.synsets(wordtag[0], self.lemmaPOS[wordtag[1]])
+        if (len(senses) == 0):
+            return self.unksense
+        return senses[0].name()
+
+    def wfs(self, sent):
+        sent_senses = []
+        for j in range(len(sent)):
+            wordtuple = sent[j]
+            if (wordtuple[1] == nountag and len(wordtuple) == 3):
+                sense = self.smallwfs(wordtuple[:2])
+                sent_senses.append([j, sense])
+        return sent_senses
+
+    def setupSenseFreqTable(self, sents: List[List[List[str]]]):
+        self.sensedict = {}
+        for sent in sents:
+            for wordtagsent in sent:
+                if (wordtagsent[1] == nountag and len(wordtagsent) == 3):
+                    word, _, syn = wordtagsent
+                    if (word in self.sensedict):
+                        if (syn in self.sensedict[word]):
+                            self.sensedict[word][syn] += 1
+                        else:
+                            self.sensedict[word][syn] = 1
+                    else:
+                        self.sensedict[word] = {}
+                        self.sensedict[word][syn] = 1
+        with open('data/sensefreq.txt', 'w') as f:
+            f.write(json.dumps(self.sensedict, indent=4))
+
+    def mfs(self, sent):
+        def smallmfs(wordtag):
+            word, tag = wordtag
+            if word in self.sensedict:
+                syn = max(self.sensedict[word],
+                          key=lambda x: self.sensedict[word][x])
+                return syn
+            else:
+                return self.smallwfs(wordtag)
+        sent_senses = []
+        for j in range(len(sent)):
+            wordtuple = sent[j]
+            if (wordtuple[1] == nountag and len(wordtuple) == 3):
+                sense = smallmfs(wordtuple[:2])
+                sent_senses.append([j, sense])
+        return sent_senses
+
+    def getBaselines(self):
+        print('WFS accuracies: ', end='')
+        self.kfoldeval(lambda x: x, self.wfs)
+        print('\nMFS accuracies: ', end='')
+        self.kfoldeval(self.setupSenseFreqTable, self.mfs)
+        print()
+
+    def testOnCorpus(self):
+        # print('Lesk accuracies: ',end='')
+        # self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
+        # print()
+        print('Page Rank accuracies: ', end='')
+        self.kfoldeval(lambda x: x, self.pageRank)
+        print()
+
+    def loadSentsFromCorpus(self):
         content = None
         with open('data/tagsemsents.txt', 'r') as f:
             content = f.read()
@@ -213,31 +338,32 @@ class WSD:
         sents = json.loads(content)
         for i in range(len(sents)):
             sents[i] = list(map(lambda x: x.split(semtagwordsep), sents[i]))
+        return sents
 
+    def kfoldeval(self, trainfunc, func, k=5):
+        sents = self.loadSentsFromCorpus()
+        sents = np.asanyarray(sents, dtype=object)
+        perm = np.random.permutation(len(sents))
+        step = int(len(sents)/k)
+        sents = sents[perm].tolist()
+        for i in range(k):
+            # no training in lesk?
+            trainsents = sents[:i*step]+sents[i*step+step:]
+            testsents = sents[i*step:i*step+step]
+            trainfunc(trainsents)
+            self.applyMethodOnCorpus(func, testsents)
+
+    def applyMethodOnCorpus(self, func, sents):
         senses = []
-        for sent in sents[:1]:
-            seq = list(map(lambda x: x[0].lower(), sent))
-            sent_senses = []
-
-            if useLesk:
-                for j in range(len(sent)):
-                    wordtuple = sent[j]
-
-                    if (wordtuple[1] == nountag and len(wordtuple) == 3):
-                        sense = self.simplifiedLesk(wordtuple[:2], seq)
-                        sent_senses.append([j, sense])
-
-                senses.append(sent_senses)
-
-            else:
-                sent_senses = self.pageRank(sent)
-                senses.append(sent_senses)
-
+        for sent in sents:
+            sent_senses = func(sent)
+            senses.append(sent_senses)
         self.evaluate(sents, senses)
 
     def evaluate(self, sents, senses):
         accuracy = 0
         numtests = 0
+        failures = []
         for i in range(len(senses)):
             sensesent = senses[i]
             realsent = sents[i]
@@ -245,10 +371,14 @@ class WSD:
                 numtests += 1
                 if (realsent[ind][-1] == sense):
                     accuracy += 1
+                else:
+                    failures.append([realsent, sense, ])
         accuracy = round(100*accuracy/numtests, 2)
-        print(accuracy)
+        print(accuracy, end=' ')
 
 
 if __name__ == '__main__':
+    np.random.seed(0)
     w = WSD()
     w.testOnCorpus()
+    # w.getBaselines()
