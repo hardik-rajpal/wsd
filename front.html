@@ -6,6 +6,39 @@
             function displayData(senses){
                 for(let word of Object.keys(senses)){
                     console.log(senses[word])
+                    //dataformat:
+                    /*
+                    senses = {
+                        'boy@1':{
+                            'synset':'male_child.n.01',
+                            'def':'definition of the word',
+                            'examples':['ex1', 'ex2', 'ex3'],   
+                        }
+                    }
+                    */
+
+                    /*
+                    Sample Senses:
+                    "senses": {
+                        "boy@1": {
+                            "synset": "male_child.n.01",
+                            "def": "a youthful male person",
+                            "examples": [
+                                "the baby was a boy",
+                                "she made the boy brush his teeth every night",
+                                "most soldiers are only boys in uniform"
+                            ]
+                        },
+                        "cow@5": {
+                            "synset": "cow.n.01",
+                            "def": "female of domestic cattle:",
+                            "examples": [
+                                "`moo-cow' is a child's term"
+                            ]
+                        }
+                    }
+                    
+                    */
                     //replace console.log with code to update html elements.
                 }
             }
