@@ -150,7 +150,6 @@ class WSD:
                     signat1 = self.getSignature(senses[i][j])
                     signat2 = self.getSignature(senses[i+1][k])
                     overlap = self.computeOverlap(signat1, signat2)
-                    
                     node_wts.append(overlap)
                 layer_wts.append(node_wts)
             edge_wts.append(layer_wts)
@@ -179,7 +178,7 @@ class WSD:
     def tokenize(self, seq: str):
         return nltk.word_tokenize(seq)
 
-    def attachSensesTo(self, sent: str, useLesk=True):
+    def     attachSensesTo(self, sent: str, useLesk=True):
         sent = sent.lower()
         tkns = self.tokenize(sent)
         tagged_tkns = self.tagger.tag(tkns)
