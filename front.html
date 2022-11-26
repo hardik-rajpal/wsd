@@ -5,6 +5,11 @@
         <script>
             function displayData(senses){
                 var table = document.getElementById("word-sense");
+                let sent = document.getElementById('sent')
+                let algo = document.getElementById('algo')
+                sent.style.visibility = 'hidden';      // Hide
+                algo.style.visibility = 'hidden';      // Hide
+                table.style.visibility = 'visible';     
                 for(let word of Object.keys(senses)){
                     console.log(senses[word])
                     var row =   table.insertRow(0);
@@ -55,9 +60,11 @@
                 let sent = document.getElementById('sent').value.split(' ').join('_')
                 console.log(document.getElementById('sent'))
                 let algo = 'wfs'
+                let send = "pp"
                 let data = {
                     sentence:sent,
-                    algorithm:algo
+                    algorithm:algo,
+                    send:send,
                 }
                 const options = {
                     method: 'POST',
@@ -73,7 +80,7 @@
                   };
                 const url = 'http://127.0.0.1:8000/senses/'
                 
-                axios.post(url,data).then((ans)=>{
+                axios.get(url,data).then((ans)=>{
                     displayData(ans.data)
                 })
                 //fetch(url, options).then(ans=>{
@@ -89,7 +96,7 @@
         <input id="sent" placeholder="Enter a sentence here..." value="the boy loves me"/>
         <input id="algo" placeholder="Enter one of wfs, mfs, elesk or pr" value="wfs"/>
         <button onclick="getSenses()">Submit</button>
-    <table id="word-sense">
+    <table id="word-sense" hidden>
         <!-- <tr>
             <th>Company</th>
             <th>Contact</th>
