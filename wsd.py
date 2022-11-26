@@ -170,10 +170,11 @@ class WSD:
         ambg_word_tuple = []  # (word, tag)
         indices = []
         # print(seq)
+
         for j in range(len(seq)):
             wordtuple = seq[j]
             #TODO: change wordtuple length
-            if (wordtuple[1]==nountag or wordtuple[1]=='VERB'):
+            if (len(wordtuple) == 3 and (wordtuple[1]==nountag or wordtuple[1]=='VERB')):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
 
@@ -183,14 +184,11 @@ class WSD:
         senses = []
         for tup in ambg_word_tuple:
             senses.append(
-                # list(map(
-                # lambda x: x.name() ,
                 (wordnet.synsets(tup[0], self.lemmaPOS[tup[1]]))
-                # )
-                # )
             )
             if (len(senses[-1]) == 0):
                 senses[-1] = [self.unksense]
+        
         scores = []
         for i in range(len(senses)):
             l = len(senses[i])
@@ -227,13 +225,23 @@ class WSD:
         for j in range(len(senses[-1])):
             if (type(senses[-1][j]) != str):
                 senses[-1][j] = senses[-1][j].name()
-        for i in range(1, len(senses)):
-            for j in range(len(senses[i])):
-                score = 0
-                for k in range(len(senses[i-1])):
-                    score += edge_wts[i-1][k][j] / \
-                        (sum(edge_wts[i-1][k])) * scores[i-1][k]
-                scores[i][j] = (1-d) * scores[i][j] + d * score
+        
+        for iter in range(10):
+            for i in range(len(senses)):
+                for j in range(len(senses[i])):
+                    score = 0
+                    if i > 0:
+                        for k in range(len(senses[i-1])):
+                            score += edge_wts[i-1][k][j] / \
+                                (sum(edge_wts[i-1][k])) * scores[i-1][k]
+                    if i < len(senses) -1 :
+                        for k in range(len(senses[i+1])):
+                            denom = 0
+                            for f in range(len(senses[i])):
+                                denom += edge_wts[i][f][k]
+                            score += edge_wts[i][j][k] / \
+                                denom * scores[i+1][k]
+                    scores[i][j] = (1-d) * scores[i][j] + d * score
 
         # for i in range(len(senses)):
         #     for j in range(len(senses[i])):
