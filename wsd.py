@@ -3,8 +3,9 @@ from nltk.corpus.reader.tagged import TaggedCorpusReader
 from nltk.corpus.reader.semcor import SemcorCorpusReader
 from nltk.corpus import stopwords as stopWordsReader
 from nltk.corpus import treebank, wordnet, brown, semcor
-from nltk.tag import BigramTagger, UnigramTagger, DefaultTagger
+from nltk.tag import BigramTagger, UnigramTagger, DefaultTagger,pos_tag
 from nltk.stem import WordNetLemmatizer
+
 import json
 import nltk
 import re
@@ -23,7 +24,6 @@ OVERLAPMS = [
 OVERLAP_METHOD = 3
 semtagwordsep = '**'
 nountag = 'NOUN'
-
 
 class WSD:
 
@@ -124,7 +124,7 @@ class WSD:
         elif (method == 2):
             signatvect = np.mean(signatMat, axis=0)
             ctxvect = np.mean(contextMat, axis=0)
-            res = np.dot(signatvect, ctxvect)
+            res = np.dot(signatvect, ctxvect)/(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             res = np.abs(res)
         elif (method == 3):
             thres = 0.8
@@ -174,7 +174,7 @@ class WSD:
         for j in range(len(seq)):
             wordtuple = seq[j]
             #TODO: change wordtuple length
-            if (len(wordtuple) == 3 and (wordtuple[1]==nountag or wordtuple[1]=='VERB')):
+            if ((wordtuple[1]==nountag or wordtuple[1]=='VERB')):
                 ambg_word_tuple.append(wordtuple[:2])
                 indices.append(j)
 
@@ -259,9 +259,10 @@ class WSD:
     def tokenize(self, seq: str):
         return nltk.word_tokenize(seq)
     def attachSensesTo(self,sent:str,algo):
-        sent = sent.lower()
+        # tagged_tkns = self.tagger.tag(tkns)
         tkns = self.tokenize(sent)
-        tagged_tkns = self.tagger.tag(tkns)
+        tagged_tkns = pos_tag(tkns,tagset='universal')
+        # sent = sent.lower()
         lemmatkns = self.lemmatize(tkns)
 
         for i in range(len(tagged_tkns)):
@@ -285,7 +286,7 @@ class WSD:
             if(tgtkn[1]==nountag):
                 defdict[tgtkn[0]+'@'+str(i)] = senses[j][1]
                 j+=1
-        return defdict
+        return defdict,tagged_tkns
     def expandSenseDict(self,defdict):
         for key in defdict.keys():
             if(defdict[key]!=self.unksense):
@@ -360,9 +361,9 @@ class WSD:
         print()
 
     def testOnCorpus(self):
-        # print('Lesk accuracies: ',end='')
-        # self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
-        # print()
+        print('Lesk accuracies: ',end='')
+        self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
+        print()
         print('Page Rank accuracies: ', end='')
         self.kfoldeval(lambda x: x, self.pageRank)
         print()

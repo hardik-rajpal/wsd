@@ -16,10 +16,11 @@ w = WSD(True)
 async def create_item(req:Request):
     print(req)
     sent = ' '.join(req.sentence.split('_'))
-    sensedict = w.attachSensesTo(sent,req.algorithm)
+    sensedict,taggedsent = w.attachSensesTo(sent,req.algorithm)
     sensedict = w.expandSenseDict(sensedict)
     return JSONResponse(content={
-            'senses':sensedict
+            'senses':sensedict,
+            'tagged':taggedsent
             },headers={
                 'Access-Control-Allow-Origin':'*'
             })
