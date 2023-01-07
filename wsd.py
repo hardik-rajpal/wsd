@@ -123,8 +123,8 @@ class WSD:
             res = np.dot(signatvect, ctxvect) /(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             res = np.abs(res)
         elif (method == 2):
-            signatvect = np.sum(signatMat, axis=0)
-            ctxvect = np.sum(contextMat, axis=0)
+            signatvect = np.mean(signatMat, axis=0)
+            ctxvect = np.mean(contextMat, axis=0)
             res = np.dot(signatvect, ctxvect)/(np.linalg.norm(signatvect)*np.linalg.norm(ctxvect))
             # res = np.abs(res)
         elif (method == 3):
@@ -263,11 +263,11 @@ class WSD:
         tkns = self.tokenize(sent)
         tagged_tkns = pos_tag(tkns,tagset='universal')
         # sent = sent.lower()
-        lemmatkns = self.lemmatize(tkns)
+        # lemmatkns = self.lemmatize(tkns)
 
-        for i in range(len(tagged_tkns)):
-            tagged_tkns[i] = list(tagged_tkns[i])
-            tagged_tkns[i][0] = lemmatkns[i]
+        # for i in range(len(tagged_tkns)):
+        #     tagged_tkns[i] = list(tagged_tkns[i])
+        #     tagged_tkns[i][0] = lemmatkns[i]
         senses = []
         defdict = {}
         if(algo=='wfs'):
@@ -361,9 +361,9 @@ class WSD:
         print()
 
     def testOnCorpus(self):
-        # print('Lesk accuracies: ',end='')
-        # self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
-        # print()
+        print('Lesk accuracies: ',end='')
+        self.kfoldeval(lambda x:x,self.simplifiedLeskOnSent)
+        print()
         print('Page Rank accuracies: ', end='')
         self.kfoldeval(lambda x: x, self.pageRank)
         print()
